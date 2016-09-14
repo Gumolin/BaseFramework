@@ -18,7 +18,7 @@
     btn.frame = CGRectMake(100, 100, 30, 30);
     [btn addTarget: self action:@selector(pushVC) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
-   //test
+   
 }
 
 - (void)pushVC
