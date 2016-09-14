@@ -36,6 +36,8 @@
 		5503B2BB1D829C0A000343EA /* OOStretchTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B2B51D829C0A000343EA /* OOStretchTableHeaderView.m */; };
 		5503B2BC1D829C0A000343EA /* UIActionSheet+camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B2B71D829C0A000343EA /* UIActionSheet+camera.m */; };
 		5503B2BF1D829C37000343EA /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B2BE1D829C37000343EA /* KxMenu.m */; };
+		554ADAC21D8921E60039A200 /* TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554ADAC11D8921E60039A200 /* TouchViewController.m */; };
+		554ADAC51D8929750039A200 /* OOCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 554ADAC41D8929750039A200 /* OOCircleView.m */; };
 		6D686FC4EC4BB2022D8CEF86 /* libPods-BaseFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6795E52FE2284623FD7B39E /* libPods-BaseFramework.a */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +121,10 @@
 		5503B2B71D829C0A000343EA /* UIActionSheet+camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+camera.m"; sourceTree = "<group>"; };
 		5503B2BD1D829C37000343EA /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
 		5503B2BE1D829C37000343EA /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
+		554ADAC01D8921E60039A200 /* TouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchViewController.h; sourceTree = "<group>"; };
+		554ADAC11D8921E60039A200 /* TouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchViewController.m; sourceTree = "<group>"; };
+		554ADAC31D8929750039A200 /* OOCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOCircleView.h; sourceTree = "<group>"; };
+		554ADAC41D8929750039A200 /* OOCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOCircleView.m; sourceTree = "<group>"; };
 		8F22BA48BF4383101235A4B4 /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		D6795E52FE2284623FD7B39E /* libPods-BaseFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD4B0A4D3B8BC1DDAB9EFAB /* Pods-BaseFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				138E8BDE1C4A71010095F92B /* Main */,
+				554ADABF1D89219B0039A200 /* View事件 */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -382,6 +389,17 @@
 			path = Control;
 			sourceTree = "<group>";
 		};
+		554ADABF1D89219B0039A200 /* View事件 */ = {
+			isa = PBXGroup;
+			children = (
+				554ADAC01D8921E60039A200 /* TouchViewController.h */,
+				554ADAC11D8921E60039A200 /* TouchViewController.m */,
+				554ADAC31D8929750039A200 /* OOCircleView.h */,
+				554ADAC41D8929750039A200 /* OOCircleView.m */,
+			);
+			path = "View事件";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -562,12 +580,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554ADAC51D8929750039A200 /* OOCircleView.m in Sources */,
 				5503B2B91D829C0A000343EA /* OOQRImageView.m in Sources */,
 				5503B2761D828B15000343EA /* Const.m in Sources */,
 				5503B2911D8295DD000343EA /* BaseViewController.m in Sources */,
 				5503B2B81D829C0A000343EA /* OOProgressHUD.m in Sources */,
 				5503B2731D828B15000343EA /* UILabel+Extend.m in Sources */,
 				5503B28E1D82948D000343EA /* OOLocationManager.m in Sources */,
+				554ADAC21D8921E60039A200 /* TouchViewController.m in Sources */,
 				138E8BE41C4A74EB0095F92B /* OONavigationController.m in Sources */,
 				5503B2721D828B15000343EA /* UIImage+Extend.m in Sources */,
 				5503B2741D828B15000343EA /* UIView+Extend.m in Sources */,

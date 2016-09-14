@@ -26,10 +26,9 @@
     //对不同种风格进行设置
     if (tableViewStyle == UITableViewStylePlain) {
         _tableView.tableFooterView = [[UIView alloc] init];
-        _tableView.backgroundColor = ColorBackgroud;
+        _tableView.backgroundColor = [UIColor whiteColor];
     }
     else if (tableViewStyle == UITableViewStyleGrouped){
-//        _tableView.tableHeaderView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, _tableView.w, 10)];
         _tableView.backgroundColor = ColorBackgroud;
         _tableView.sectionFooterHeight = 0.000001f;
     }
