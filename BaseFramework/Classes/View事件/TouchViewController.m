@@ -7,7 +7,7 @@
 //
 
 #import "TouchViewController.h"
-
+#import "TwoViewController.h"
 #import "OOCircleView.h"
 @interface TouchViewController ()
 
@@ -24,8 +24,16 @@
         view;
     })];
     
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    btn.frame = CGRectMake(100, 100, 40, 40);
+    [btn addTarget:self action:@selector(show) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:btn];
 }
 
+- (void)show{
+    TwoViewController *vc = [[TwoViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

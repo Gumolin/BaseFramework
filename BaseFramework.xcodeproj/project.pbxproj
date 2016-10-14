@@ -38,6 +38,7 @@
 		5503B2BF1D829C37000343EA /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B2BE1D829C37000343EA /* KxMenu.m */; };
 		554ADAC21D8921E60039A200 /* TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554ADAC11D8921E60039A200 /* TouchViewController.m */; };
 		554ADAC51D8929750039A200 /* OOCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 554ADAC41D8929750039A200 /* OOCircleView.m */; };
+		55F36AD81D9D0EA7006634CB /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */; };
 		6D686FC4EC4BB2022D8CEF86 /* libPods-BaseFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6795E52FE2284623FD7B39E /* libPods-BaseFramework.a */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +126,8 @@
 		554ADAC11D8921E60039A200 /* TouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchViewController.m; sourceTree = "<group>"; };
 		554ADAC31D8929750039A200 /* OOCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOCircleView.h; sourceTree = "<group>"; };
 		554ADAC41D8929750039A200 /* OOCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOCircleView.m; sourceTree = "<group>"; };
+		55F36AD61D9D0EA7006634CB /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		8F22BA48BF4383101235A4B4 /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		D6795E52FE2284623FD7B39E /* libPods-BaseFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD4B0A4D3B8BC1DDAB9EFAB /* Pods-BaseFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -373,6 +376,8 @@
 		5503B2AD1D829C0A000343EA /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				55F36AD61D9D0EA7006634CB /* MBProgressHUD+MJ.h */,
+				55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */,
 				5503B2BD1D829C37000343EA /* KxMenu.h */,
 				5503B2BE1D829C37000343EA /* KxMenu.m */,
 				5503B2AE1D829C0A000343EA /* OOProgressHUD.h */,
@@ -598,6 +603,7 @@
 				138E8BE11C4A743D0095F92B /* OOTabBarController.m in Sources */,
 				13F237E11C3D3C5F00E5D8A3 /* AppDelegate.m in Sources */,
 				5503B28A1D8292EA000343EA /* OODataBaseManager.m in Sources */,
+				55F36AD81D9D0EA7006634CB /* MBProgressHUD+MJ.m in Sources */,
 				5503B2861D828F26000343EA /* NSNumber+Extend.m in Sources */,
 				5503B2BA1D829C0A000343EA /* OOSegmentedControl.m in Sources */,
 				13F237DE1C3D3C5F00E5D8A3 /* main.m in Sources */,
@@ -742,7 +748,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseFramework/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseFramework/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -761,7 +767,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseFramework/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseFramework/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
