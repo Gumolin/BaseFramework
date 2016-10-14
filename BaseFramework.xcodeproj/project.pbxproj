@@ -37,6 +37,7 @@
 		5503B2BF1D829C37000343EA /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B2BE1D829C37000343EA /* KxMenu.m */; };
 		550A22C31DB0D11C0025A2B5 /* OOCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22BF1DB0D11C0025A2B5 /* OOCircleView.m */; };
 		550A22C41DB0D11C0025A2B5 /* TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22C11DB0D11C0025A2B5 /* TouchViewController.m */; };
+		550A22C61DB0EBAB0025A2B5 /* Precis.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 550A22C51DB0EBAB0025A2B5 /* Precis.rtf */; };
 		55F36AD81D9D0EA7006634CB /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */; };
 		6D686FC4EC4BB2022D8CEF86 /* libPods-BaseFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6795E52FE2284623FD7B39E /* libPods-BaseFramework.a */; };
 /* End PBXBuildFile section */
@@ -123,6 +124,7 @@
 		550A22BF1DB0D11C0025A2B5 /* OOCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOCircleView.m; sourceTree = "<group>"; };
 		550A22C01DB0D11C0025A2B5 /* TouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchViewController.h; sourceTree = "<group>"; };
 		550A22C11DB0D11C0025A2B5 /* TouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchViewController.m; sourceTree = "<group>"; };
+		550A22C51DB0EBAB0025A2B5 /* Precis.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Precis.rtf; sourceTree = "<group>"; };
 		55F36AD61D9D0EA7006634CB /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		8F22BA48BF4383101235A4B4 /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 		13F237DB1C3D3C5F00E5D8A3 /* BaseFramework */ = {
 			isa = PBXGroup;
 			children = (
+				550A22C51DB0EBAB0025A2B5 /* Precis.rtf */,
 				5503B2541D828B15000343EA /* Helper */,
 				133E1FA01C3E9A42001C8977 /* Classes */,
 				13E4A35F1C4A2FD400990C02 /* Other */,
@@ -344,8 +347,6 @@
 		5503B2871D8292EA000343EA /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
-				5503B29B1D8299E2000343EA /* OOKeyChainTool.h */,
-				5503B29C1D8299E2000343EA /* OOKeyChainTool.m */,
 				5503B2881D8292EA000343EA /* OODataBaseManager.h */,
 				5503B2891D8292EA000343EA /* OODataBaseManager.m */,
 			);
@@ -357,6 +358,8 @@
 			children = (
 				5503B28C1D82948D000343EA /* OOLocationManager.h */,
 				5503B28D1D82948D000343EA /* OOLocationManager.m */,
+				5503B29B1D8299E2000343EA /* OOKeyChainTool.h */,
+				5503B29C1D8299E2000343EA /* OOKeyChainTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 			files = (
 				13F237EC1C3D3C5F00E5D8A3 /* LaunchScreen.storyboard in Resources */,
 				13F237E91C3D3C5F00E5D8A3 /* Assets.xcassets in Resources */,
+				550A22C61DB0EBAB0025A2B5 /* Precis.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
