@@ -8,7 +8,8 @@
 
 #import "OneViewController.h"
 #import "TouchViewController.h"
-
+#import "SegmentedControlViewController.h"
+#import "CameraViewController.h"
 @interface OneViewController()
 @property (nonatomic, strong) NSArray *arrayName;
 @property (nonatomic, strong) NSArray *arrayViewController;
@@ -21,8 +22,13 @@
 {
     [super viewDidLoad];
     
-    _arrayName = @[NSStringFromClass([TouchViewController class])];
-    _arrayViewController = @[[[TouchViewController alloc] init]];
+    _arrayName = @[NSStringFromClass([TouchViewController class]),
+                   NSStringFromClass([SegmentedControlViewController class]),
+                   NSStringFromClass([CameraViewController class])];
+    
+    _arrayViewController = @[[[TouchViewController alloc] init],
+                             [[SegmentedControlViewController alloc] init],
+                             [[CameraViewController alloc] init]];
     
     [self.view addSubview:self.tableView];
 }
@@ -47,6 +53,8 @@
 #pragma mark - TableView Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UIViewController *vc = self.arrayViewController[indexPath.row];
+    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:self.arrayViewController[indexPath.row] animated:YES];
 }
 @end

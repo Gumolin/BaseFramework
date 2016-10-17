@@ -2,7 +2,7 @@
 //  DWDSegmentedControl.h
 //  EduChat
 //
-//  Created by apple on 15/12/8.
+//  Created by Beelin on 15/12/8.
 //  Copyright © 2015年 dwd. All rights reserved.
 //  选择按钮control
 
@@ -10,15 +10,15 @@
 
 @class OOSegmentedControl;
 @protocol OOSegmentedControlDelegate <NSObject>
--(void)segmentedControlIndexButtonView:(OOSegmentedControl *)indexButtonView lickBtn:(UIButton*)sender;
+-(void)segmentedControlIndexButtonView:(OOSegmentedControl *)indexButtonView lickBtnAtTag:(NSInteger)tag;
 @end
 
 
 @interface OOSegmentedControl : UIView
++ (instancetype)segmentedControlWithFrame:(CGRect)frame Titles:(NSArray *)titles;
+@property (nonatomic, strong) UIColor *tintColor;
 
-@property (nonatomic,strong) NSArray *arrayTitles;
-@property (nonatomic,strong) UIButton *selectBtn;
-@property (nonatomic,strong) UIView *indexLine;
-@property (assign, nonatomic) CGFloat IndexLineX;
+/** 提供block 与 delegate,选择一种即可 */
+@property (nonatomic, copy) void(^clickButtonBlock)(NSInteger tag);
 @property (nonatomic,weak) id<OOSegmentedControlDelegate> delegate;
 @end

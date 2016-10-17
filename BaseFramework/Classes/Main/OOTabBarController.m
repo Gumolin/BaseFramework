@@ -10,17 +10,21 @@
 #import "OONavigationController.h"
 #import "OneViewController.h"
 #import "TwoViewController.h"
-
+#import "ThreeViewController.h"
 @implementation OOTabBarController
 
 - (instancetype)init{
     if (self = [super init]) {
        
         OneViewController *one = [[OneViewController alloc]init];
-        [self setupChildVc:one title:@"one" image:nil selectedImage:nil];
+        [self setupChildVc:one title:@"功能demo" image:nil selectedImage:nil];
         
         TwoViewController *two = [[TwoViewController alloc]init];
-        [self setupChildVc:two title:@"two" image:nil selectedImage:nil];
+        [self setupChildVc:two title:@"非功能demo" image:nil selectedImage:nil];
+        
+        ThreeViewController *three = [[ThreeViewController alloc]init];
+        [self setupChildVc:three title:@"第三方Demo" image:nil selectedImage:nil];
+
         
         
     }

@@ -2,7 +2,7 @@
 //  OOStretchTableHeaderView.m
 //  StretchTableHeaderView
 //
-//  Created by Gatlin-man on 16/4/7.
+//  Created by Beelin on 16/4/7.
 //  Copyright © 2016年 Gatlin. All rights reserved.
 //
 
@@ -16,8 +16,7 @@
 @implementation OOStretchTableHeaderView
 
 
-+ (instancetype)stretchHeaderForTableView:(UITableView*)tableView withView:(UIView*)view
-{
++ (instancetype)stretchHeaderForTableView:(UITableView*)tableView withView:(UIView*)view{
     OOStretchTableHeaderView *stretchHeaderView = [OOStretchTableHeaderView new];
     
     stretchHeaderView.tableView = tableView;
@@ -33,10 +32,8 @@
 }
 
 
-- (void)scrollViewDidScroll:(UIScrollView*)scrollView
-{
+- (void)scrollViewDidScroll:(UIScrollView*)scrollView{
     if(scrollView.contentOffset.y < 0) {
-        
         CGFloat offsetY = (scrollView.contentOffset.y + scrollView.contentInset.top) * -1;
         _initialFrame.origin.y = offsetY * -1;
         _initialFrame.size.height = self.defaultViewHeight + offsetY;
@@ -44,8 +41,7 @@
     }
 }
 
-- (void)resizeView
-{
+- (void)resizeView{
     _initialFrame.size.width = self.tableView.frame.size.width;
     _view.frame = self.initialFrame;
 }

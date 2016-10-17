@@ -12,7 +12,7 @@
 #ifdef DEBUG
 #define OOLog(...) NSLog(__VA_ARGS__)
 // 打印调试
-#define OOLogFunc DWDLog(@"%s", __func__)
+#define OOLogFunc OOLog(@"%s", __func__)
 #else
 #define OOLog(...)
 #define OOLogFunc

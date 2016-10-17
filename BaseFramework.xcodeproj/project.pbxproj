@@ -38,6 +38,10 @@
 		550A22C31DB0D11C0025A2B5 /* OOCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22BF1DB0D11C0025A2B5 /* OOCircleView.m */; };
 		550A22C41DB0D11C0025A2B5 /* TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22C11DB0D11C0025A2B5 /* TouchViewController.m */; };
 		550A22C61DB0EBAB0025A2B5 /* Precis.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 550A22C51DB0EBAB0025A2B5 /* Precis.rtf */; };
+		550A22C91DB4C4750025A2B5 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22C81DB4C4750025A2B5 /* ThreeViewController.m */; };
+		550A22CC1DB4C68A0025A2B5 /* KxMenuItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22CB1DB4C68A0025A2B5 /* KxMenuItemViewController.m */; };
+		550A22CF1DB4D1D00025A2B5 /* SegmentedControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22CE1DB4D1D00025A2B5 /* SegmentedControlViewController.m */; };
+		550A22D51DB4D9E10025A2B5 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22D41DB4D9E10025A2B5 /* CameraViewController.m */; };
 		55F36AD81D9D0EA7006634CB /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */; };
 		6D686FC4EC4BB2022D8CEF86 /* libPods-BaseFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6795E52FE2284623FD7B39E /* libPods-BaseFramework.a */; };
 /* End PBXBuildFile section */
@@ -125,6 +129,14 @@
 		550A22C01DB0D11C0025A2B5 /* TouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchViewController.h; sourceTree = "<group>"; };
 		550A22C11DB0D11C0025A2B5 /* TouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchViewController.m; sourceTree = "<group>"; };
 		550A22C51DB0EBAB0025A2B5 /* Precis.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Precis.rtf; sourceTree = "<group>"; };
+		550A22C71DB4C4750025A2B5 /* ThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		550A22C81DB4C4750025A2B5 /* ThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		550A22CA1DB4C68A0025A2B5 /* KxMenuItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenuItemViewController.h; sourceTree = "<group>"; };
+		550A22CB1DB4C68A0025A2B5 /* KxMenuItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenuItemViewController.m; sourceTree = "<group>"; };
+		550A22CD1DB4D1D00025A2B5 /* SegmentedControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedControlViewController.h; sourceTree = "<group>"; };
+		550A22CE1DB4D1D00025A2B5 /* SegmentedControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControlViewController.m; sourceTree = "<group>"; };
+		550A22D31DB4D9E10025A2B5 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		550A22D41DB4D9E10025A2B5 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		55F36AD61D9D0EA7006634CB /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		8F22BA48BF4383101235A4B4 /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +193,8 @@
 				138E8BE61C4A75100095F92B /* OneViewController.m */,
 				138E8BE81C4A75270095F92B /* TwoViewController.h */,
 				138E8BE91C4A75270095F92B /* TwoViewController.m */,
+				550A22C71DB4C4750025A2B5 /* ThreeViewController.h */,
+				550A22C81DB4C4750025A2B5 /* ThreeViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -397,6 +411,8 @@
 		550A22BB1DB0D11C0025A2B5 /* 第三方Demo */ = {
 			isa = PBXGroup;
 			children = (
+				550A22CA1DB4C68A0025A2B5 /* KxMenuItemViewController.h */,
+				550A22CB1DB4C68A0025A2B5 /* KxMenuItemViewController.m */,
 			);
 			path = "第三方Demo";
 			sourceTree = "<group>";
@@ -423,6 +439,10 @@
 		550A22C21DB0D11C0025A2B5 /* 功能Demo */ = {
 			isa = PBXGroup;
 			children = (
+				550A22CD1DB4D1D00025A2B5 /* SegmentedControlViewController.h */,
+				550A22CE1DB4D1D00025A2B5 /* SegmentedControlViewController.m */,
+				550A22D31DB4D9E10025A2B5 /* CameraViewController.h */,
+				550A22D41DB4D9E10025A2B5 /* CameraViewController.m */,
 			);
 			path = "功能Demo";
 			sourceTree = "<group>";
@@ -611,6 +631,7 @@
 				550A22C31DB0D11C0025A2B5 /* OOCircleView.m in Sources */,
 				5503B2B91D829C0A000343EA /* OOQRImageView.m in Sources */,
 				5503B2761D828B15000343EA /* Const.m in Sources */,
+				550A22CF1DB4D1D00025A2B5 /* SegmentedControlViewController.m in Sources */,
 				5503B2911D8295DD000343EA /* BaseViewController.m in Sources */,
 				5503B2B81D829C0A000343EA /* OOProgressHUD.m in Sources */,
 				5503B2731D828B15000343EA /* UILabel+Extend.m in Sources */,
@@ -622,6 +643,7 @@
 				138E8BEA1C4A75270095F92B /* TwoViewController.m in Sources */,
 				5503B2BC1D829C0A000343EA /* UIActionSheet+camera.m in Sources */,
 				138E8BE71C4A75100095F92B /* OneViewController.m in Sources */,
+				550A22D51DB4D9E10025A2B5 /* CameraViewController.m in Sources */,
 				138E8BE11C4A743D0095F92B /* OOTabBarController.m in Sources */,
 				13F237E11C3D3C5F00E5D8A3 /* AppDelegate.m in Sources */,
 				5503B28A1D8292EA000343EA /* OODataBaseManager.m in Sources */,
@@ -632,8 +654,10 @@
 				5503B2BF1D829C37000343EA /* KxMenu.m in Sources */,
 				5503B2771D828B15000343EA /* NetWork.m in Sources */,
 				5503B2BB1D829C0A000343EA /* OOStretchTableHeaderView.m in Sources */,
+				550A22C91DB4C4750025A2B5 /* ThreeViewController.m in Sources */,
 				5503B29D1D8299E2000343EA /* OOKeyChainTool.m in Sources */,
 				5503B2711D828B15000343EA /* NSString+Extend.m in Sources */,
+				550A22CC1DB4C68A0025A2B5 /* KxMenuItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
