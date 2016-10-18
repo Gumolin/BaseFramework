@@ -10,6 +10,10 @@
 #import "TouchViewController.h"
 #import "SegmentedControlViewController.h"
 #import "CameraViewController.h"
+#import "QRImageViewController.h"
+#import "StretchTableHeaderViewController.h"
+#import "LaunchViewController.h"
+#import "BannerViewController.h"
 @interface OneViewController()
 @property (nonatomic, strong) NSArray *arrayName;
 @property (nonatomic, strong) NSArray *arrayViewController;
@@ -24,10 +28,18 @@
     
     _arrayName = @[NSStringFromClass([TouchViewController class]),
                    NSStringFromClass([SegmentedControlViewController class]),
+                   NSStringFromClass([QRImageViewController class]),
+                   NSStringFromClass([StretchTableHeaderViewController class]),
+                   NSStringFromClass([LaunchViewController class]),
+                   NSStringFromClass([BannerViewController class]),
                    NSStringFromClass([CameraViewController class])];
     
     _arrayViewController = @[[[TouchViewController alloc] init],
                              [[SegmentedControlViewController alloc] init],
+                             [[QRImageViewController alloc] init],
+                             [[StretchTableHeaderViewController alloc] init],
+                             [[LaunchViewController alloc] init],
+                             [[BannerViewController alloc] init],
                              [[CameraViewController alloc] init]];
     
     [self.view addSubview:self.tableView];
@@ -55,6 +67,10 @@
 {
     UIViewController *vc = self.arrayViewController[indexPath.row];
     vc.hidesBottomBarWhenPushed = YES;
+    if([vc isKindOfClass:[LaunchViewController class]]){
+        [self presentViewController:vc animated:YES completion:nil];
+        return;
+    }
     [self.navigationController pushViewController:self.arrayViewController[indexPath.row] animated:YES];
 }
 @end

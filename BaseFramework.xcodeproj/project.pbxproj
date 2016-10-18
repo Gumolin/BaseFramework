@@ -29,7 +29,6 @@
 		5503B2911D8295DD000343EA /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B2901D8295DD000343EA /* BaseViewController.m */; };
 		5503B29A1D82992D000343EA /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5503B2991D82992D000343EA /* libmp3lame.a */; };
 		5503B29D1D8299E2000343EA /* OOKeyChainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B29C1D8299E2000343EA /* OOKeyChainTool.m */; };
-		5503B2B81D829C0A000343EA /* OOProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B2AF1D829C0A000343EA /* OOProgressHUD.m */; };
 		5503B2B91D829C0A000343EA /* OOQRImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B2B11D829C0A000343EA /* OOQRImageView.m */; };
 		5503B2BA1D829C0A000343EA /* OOSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B2B31D829C0A000343EA /* OOSegmentedControl.m */; };
 		5503B2BB1D829C0A000343EA /* OOStretchTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B2B51D829C0A000343EA /* OOStretchTableHeaderView.m */; };
@@ -42,6 +41,12 @@
 		550A22CC1DB4C68A0025A2B5 /* KxMenuItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22CB1DB4C68A0025A2B5 /* KxMenuItemViewController.m */; };
 		550A22CF1DB4D1D00025A2B5 /* SegmentedControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22CE1DB4D1D00025A2B5 /* SegmentedControlViewController.m */; };
 		550A22D51DB4D9E10025A2B5 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22D41DB4D9E10025A2B5 /* CameraViewController.m */; };
+		550A22D81DB5B8390025A2B5 /* ProgressHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22D71DB5B8390025A2B5 /* ProgressHUDViewController.m */; };
+		550A22DB1DB5BF8E0025A2B5 /* QRImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22DA1DB5BF8E0025A2B5 /* QRImageViewController.m */; };
+		550A22DE1DB5C21C0025A2B5 /* StretchTableHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22DD1DB5C21C0025A2B5 /* StretchTableHeaderViewController.m */; };
+		550A22E11DB5F5910025A2B5 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22E01DB5F5910025A2B5 /* LaunchViewController.m */; };
+		550A22E41DB5F7CD0025A2B5 /* OOBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22E31DB5F7CD0025A2B5 /* OOBannerView.m */; };
+		55383ECF1DB606BA0011EDD9 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55383ECE1DB606BA0011EDD9 /* BannerViewController.m */; };
 		55F36AD81D9D0EA7006634CB /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */; };
 		6D686FC4EC4BB2022D8CEF86 /* libPods-BaseFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6795E52FE2284623FD7B39E /* libPods-BaseFramework.a */; };
 /* End PBXBuildFile section */
@@ -112,8 +117,6 @@
 		5503B2991D82992D000343EA /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 		5503B29B1D8299E2000343EA /* OOKeyChainTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OOKeyChainTool.h; path = BaseFramework/Helper/Tool/OOKeyChainTool.h; sourceTree = SOURCE_ROOT; };
 		5503B29C1D8299E2000343EA /* OOKeyChainTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OOKeyChainTool.m; path = BaseFramework/Helper/Tool/OOKeyChainTool.m; sourceTree = SOURCE_ROOT; };
-		5503B2AE1D829C0A000343EA /* OOProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOProgressHUD.h; sourceTree = "<group>"; };
-		5503B2AF1D829C0A000343EA /* OOProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOProgressHUD.m; sourceTree = "<group>"; };
 		5503B2B01D829C0A000343EA /* OOQRImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOQRImageView.h; sourceTree = "<group>"; };
 		5503B2B11D829C0A000343EA /* OOQRImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOQRImageView.m; sourceTree = "<group>"; };
 		5503B2B21D829C0A000343EA /* OOSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOSegmentedControl.h; sourceTree = "<group>"; };
@@ -137,6 +140,18 @@
 		550A22CE1DB4D1D00025A2B5 /* SegmentedControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedControlViewController.m; sourceTree = "<group>"; };
 		550A22D31DB4D9E10025A2B5 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		550A22D41DB4D9E10025A2B5 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		550A22D61DB5B8390025A2B5 /* ProgressHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUDViewController.h; sourceTree = "<group>"; };
+		550A22D71DB5B8390025A2B5 /* ProgressHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUDViewController.m; sourceTree = "<group>"; };
+		550A22D91DB5BF8E0025A2B5 /* QRImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRImageViewController.h; sourceTree = "<group>"; };
+		550A22DA1DB5BF8E0025A2B5 /* QRImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRImageViewController.m; sourceTree = "<group>"; };
+		550A22DC1DB5C21C0025A2B5 /* StretchTableHeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StretchTableHeaderViewController.h; sourceTree = "<group>"; };
+		550A22DD1DB5C21C0025A2B5 /* StretchTableHeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StretchTableHeaderViewController.m; sourceTree = "<group>"; };
+		550A22DF1DB5F5910025A2B5 /* LaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchViewController.h; sourceTree = "<group>"; };
+		550A22E01DB5F5910025A2B5 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
+		550A22E21DB5F7CD0025A2B5 /* OOBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOBannerView.h; sourceTree = "<group>"; };
+		550A22E31DB5F7CD0025A2B5 /* OOBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOBannerView.m; sourceTree = "<group>"; };
+		55383ECD1DB606BA0011EDD9 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		55383ECE1DB606BA0011EDD9 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		55F36AD61D9D0EA7006634CB /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		8F22BA48BF4383101235A4B4 /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
@@ -394,8 +409,6 @@
 				55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */,
 				5503B2BD1D829C37000343EA /* KxMenu.h */,
 				5503B2BE1D829C37000343EA /* KxMenu.m */,
-				5503B2AE1D829C0A000343EA /* OOProgressHUD.h */,
-				5503B2AF1D829C0A000343EA /* OOProgressHUD.m */,
 				5503B2B01D829C0A000343EA /* OOQRImageView.h */,
 				5503B2B11D829C0A000343EA /* OOQRImageView.m */,
 				5503B2B21D829C0A000343EA /* OOSegmentedControl.h */,
@@ -404,6 +417,8 @@
 				5503B2B51D829C0A000343EA /* OOStretchTableHeaderView.m */,
 				5503B2B61D829C0A000343EA /* UIActionSheet+camera.h */,
 				5503B2B71D829C0A000343EA /* UIActionSheet+camera.m */,
+				550A22E21DB5F7CD0025A2B5 /* OOBannerView.h */,
+				550A22E31DB5F7CD0025A2B5 /* OOBannerView.m */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -413,6 +428,8 @@
 			children = (
 				550A22CA1DB4C68A0025A2B5 /* KxMenuItemViewController.h */,
 				550A22CB1DB4C68A0025A2B5 /* KxMenuItemViewController.m */,
+				550A22D61DB5B8390025A2B5 /* ProgressHUDViewController.h */,
+				550A22D71DB5B8390025A2B5 /* ProgressHUDViewController.m */,
 			);
 			path = "第三方Demo";
 			sourceTree = "<group>";
@@ -443,6 +460,14 @@
 				550A22CE1DB4D1D00025A2B5 /* SegmentedControlViewController.m */,
 				550A22D31DB4D9E10025A2B5 /* CameraViewController.h */,
 				550A22D41DB4D9E10025A2B5 /* CameraViewController.m */,
+				550A22D91DB5BF8E0025A2B5 /* QRImageViewController.h */,
+				550A22DA1DB5BF8E0025A2B5 /* QRImageViewController.m */,
+				550A22DC1DB5C21C0025A2B5 /* StretchTableHeaderViewController.h */,
+				550A22DD1DB5C21C0025A2B5 /* StretchTableHeaderViewController.m */,
+				550A22DF1DB5F5910025A2B5 /* LaunchViewController.h */,
+				550A22E01DB5F5910025A2B5 /* LaunchViewController.m */,
+				55383ECD1DB606BA0011EDD9 /* BannerViewController.h */,
+				55383ECE1DB606BA0011EDD9 /* BannerViewController.m */,
 			);
 			path = "功能Demo";
 			sourceTree = "<group>";
@@ -630,10 +655,10 @@
 			files = (
 				550A22C31DB0D11C0025A2B5 /* OOCircleView.m in Sources */,
 				5503B2B91D829C0A000343EA /* OOQRImageView.m in Sources */,
+				550A22DB1DB5BF8E0025A2B5 /* QRImageViewController.m in Sources */,
 				5503B2761D828B15000343EA /* Const.m in Sources */,
 				550A22CF1DB4D1D00025A2B5 /* SegmentedControlViewController.m in Sources */,
 				5503B2911D8295DD000343EA /* BaseViewController.m in Sources */,
-				5503B2B81D829C0A000343EA /* OOProgressHUD.m in Sources */,
 				5503B2731D828B15000343EA /* UILabel+Extend.m in Sources */,
 				5503B28E1D82948D000343EA /* OOLocationManager.m in Sources */,
 				138E8BE41C4A74EB0095F92B /* OONavigationController.m in Sources */,
@@ -642,9 +667,13 @@
 				5503B2741D828B15000343EA /* UIView+Extend.m in Sources */,
 				138E8BEA1C4A75270095F92B /* TwoViewController.m in Sources */,
 				5503B2BC1D829C0A000343EA /* UIActionSheet+camera.m in Sources */,
+				55383ECF1DB606BA0011EDD9 /* BannerViewController.m in Sources */,
 				138E8BE71C4A75100095F92B /* OneViewController.m in Sources */,
 				550A22D51DB4D9E10025A2B5 /* CameraViewController.m in Sources */,
+				550A22E41DB5F7CD0025A2B5 /* OOBannerView.m in Sources */,
 				138E8BE11C4A743D0095F92B /* OOTabBarController.m in Sources */,
+				550A22D81DB5B8390025A2B5 /* ProgressHUDViewController.m in Sources */,
+				550A22DE1DB5C21C0025A2B5 /* StretchTableHeaderViewController.m in Sources */,
 				13F237E11C3D3C5F00E5D8A3 /* AppDelegate.m in Sources */,
 				5503B28A1D8292EA000343EA /* OODataBaseManager.m in Sources */,
 				55F36AD81D9D0EA7006634CB /* MBProgressHUD+MJ.m in Sources */,
@@ -658,6 +687,7 @@
 				5503B29D1D8299E2000343EA /* OOKeyChainTool.m in Sources */,
 				5503B2711D828B15000343EA /* NSString+Extend.m in Sources */,
 				550A22CC1DB4C68A0025A2B5 /* KxMenuItemViewController.m in Sources */,
+				550A22E11DB5F5910025A2B5 /* LaunchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

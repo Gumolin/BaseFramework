@@ -8,6 +8,7 @@
 
 #import "ThreeViewController.h"
 #import "KxMenuItemViewController.h"
+#import "ProgressHUDViewController.h"
 @interface ThreeViewController ()
 @property (nonatomic, strong) NSArray *dataSource;
 @property (nonatomic, strong) NSArray *arrayViewController;
@@ -19,8 +20,11 @@
     [super viewDidLoad];
     self.title = @"第三方Demo";
     
-    _dataSource = @[NSStringFromClass([KxMenuItemViewController class])];
-    _arrayViewController = @[[[KxMenuItemViewController alloc] init]];
+    _dataSource = @[NSStringFromClass([KxMenuItemViewController class]),
+                    NSStringFromClass([ProgressHUDViewController class])];
+    
+    _arrayViewController = @[[[KxMenuItemViewController alloc] init],
+                             [[ProgressHUDViewController alloc] init]];
     
     [self.view addSubview:self.tableView];
 

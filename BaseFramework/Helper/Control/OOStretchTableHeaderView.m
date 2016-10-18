@@ -3,7 +3,7 @@
 //  StretchTableHeaderView
 //
 //  Created by Beelin on 16/4/7.
-//  Copyright © 2016年 Gatlin. All rights reserved.
+//  Copyright © 2016年 Beelin. All rights reserved.
 //
 
 #import "OOStretchTableHeaderView.h"
