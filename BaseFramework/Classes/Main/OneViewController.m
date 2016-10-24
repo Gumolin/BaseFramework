@@ -26,6 +26,7 @@
 {
     [super viewDidLoad];
     
+<<<<<<< HEAD
     _arrayName = @[NSStringFromClass([TouchViewController class]),
                    NSStringFromClass([SegmentedControlViewController class]),
                    NSStringFromClass([QRImageViewController class]),
@@ -43,6 +44,13 @@
                              [[CameraViewController alloc] init]];
     
     [self.view addSubview:self.tableView];
+=======
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    btn.frame = CGRectMake(100, 100, 30, 30);
+    [btn addTarget: self action:@selector(pushVC) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+   
+>>>>>>> 5bbbcd35f29d7fb5bf97b1f9b2d1cc3701710c87
 }
 
 #pragma mark - TableView Datasource
