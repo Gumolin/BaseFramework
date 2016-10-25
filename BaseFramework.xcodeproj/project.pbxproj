@@ -46,6 +46,7 @@
 		550A22DE1DB5C21C0025A2B5 /* StretchTableHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22DD1DB5C21C0025A2B5 /* StretchTableHeaderViewController.m */; };
 		550A22E11DB5F5910025A2B5 /* LaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22E01DB5F5910025A2B5 /* LaunchViewController.m */; };
 		550A22E41DB5F7CD0025A2B5 /* OOBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 550A22E31DB5F7CD0025A2B5 /* OOBannerView.m */; };
+		550D1CDF1DBF5CCB00FBAF47 /* PhotoBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 550D1CDE1DBF5CCB00FBAF47 /* PhotoBrowserViewController.m */; };
 		55383ECF1DB606BA0011EDD9 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55383ECE1DB606BA0011EDD9 /* BannerViewController.m */; };
 		55F36AD81D9D0EA7006634CB /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */; };
 		6D686FC4EC4BB2022D8CEF86 /* libPods-BaseFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6795E52FE2284623FD7B39E /* libPods-BaseFramework.a */; };
@@ -150,6 +151,8 @@
 		550A22E01DB5F5910025A2B5 /* LaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchViewController.m; sourceTree = "<group>"; };
 		550A22E21DB5F7CD0025A2B5 /* OOBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOBannerView.h; sourceTree = "<group>"; };
 		550A22E31DB5F7CD0025A2B5 /* OOBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOBannerView.m; sourceTree = "<group>"; };
+		550D1CDD1DBF5CCB00FBAF47 /* PhotoBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoBrowserViewController.h; sourceTree = "<group>"; };
+		550D1CDE1DBF5CCB00FBAF47 /* PhotoBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserViewController.m; sourceTree = "<group>"; };
 		55383ECD1DB606BA0011EDD9 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
 		55383ECE1DB606BA0011EDD9 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
 		55F36AD61D9D0EA7006634CB /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
@@ -430,6 +433,8 @@
 				550A22CB1DB4C68A0025A2B5 /* KxMenuItemViewController.m */,
 				550A22D61DB5B8390025A2B5 /* ProgressHUDViewController.h */,
 				550A22D71DB5B8390025A2B5 /* ProgressHUDViewController.m */,
+				550D1CDD1DBF5CCB00FBAF47 /* PhotoBrowserViewController.h */,
+				550D1CDE1DBF5CCB00FBAF47 /* PhotoBrowserViewController.m */,
 			);
 			path = "第三方Demo";
 			sourceTree = "<group>";
@@ -685,6 +690,7 @@
 				5503B2BB1D829C0A000343EA /* OOStretchTableHeaderView.m in Sources */,
 				550A22C91DB4C4750025A2B5 /* ThreeViewController.m in Sources */,
 				5503B29D1D8299E2000343EA /* OOKeyChainTool.m in Sources */,
+				550D1CDF1DBF5CCB00FBAF47 /* PhotoBrowserViewController.m in Sources */,
 				5503B2711D828B15000343EA /* NSString+Extend.m in Sources */,
 				550A22CC1DB4C68A0025A2B5 /* KxMenuItemViewController.m in Sources */,
 				550A22E11DB5F5910025A2B5 /* LaunchViewController.m in Sources */,

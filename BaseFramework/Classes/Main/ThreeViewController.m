@@ -9,6 +9,7 @@
 #import "ThreeViewController.h"
 #import "KxMenuItemViewController.h"
 #import "ProgressHUDViewController.h"
+#import "PhotoBrowserViewController.h"
 @interface ThreeViewController ()
 @property (nonatomic, strong) NSArray *dataSource;
 @property (nonatomic, strong) NSArray *arrayViewController;
@@ -21,13 +22,15 @@
     self.title = @"第三方Demo";
     
     _dataSource = @[NSStringFromClass([KxMenuItemViewController class]),
-                    NSStringFromClass([ProgressHUDViewController class])];
+                    NSStringFromClass([ProgressHUDViewController class]),
+                    NSStringFromClass([PhotoBrowserViewController class])];
     
     _arrayViewController = @[[[KxMenuItemViewController alloc] init],
-                             [[ProgressHUDViewController alloc] init]];
+                             [[ProgressHUDViewController alloc] init],
+                            [[PhotoBrowserViewController alloc] init]];
     
     [self.view addSubview:self.tableView];
-
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
