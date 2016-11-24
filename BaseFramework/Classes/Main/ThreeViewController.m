@@ -10,6 +10,7 @@
 #import "KxMenuItemViewController.h"
 #import "ProgressHUDViewController.h"
 #import "PhotoBrowserViewController.h"
+#import "ImagePickerViewController.h"
 @interface ThreeViewController ()
 @property (nonatomic, strong) NSArray *dataSource;
 @property (nonatomic, strong) NSArray *arrayViewController;
@@ -23,11 +24,13 @@
     
     _dataSource = @[NSStringFromClass([KxMenuItemViewController class]),
                     NSStringFromClass([ProgressHUDViewController class]),
-                    NSStringFromClass([PhotoBrowserViewController class])];
+                    NSStringFromClass([PhotoBrowserViewController class]),
+                    NSStringFromClass([ImagePickerViewController class])];
     
     _arrayViewController = @[[[KxMenuItemViewController alloc] init],
                              [[ProgressHUDViewController alloc] init],
-                            [[PhotoBrowserViewController alloc] init]];
+                            [[PhotoBrowserViewController alloc] init],
+                             [[ImagePickerViewController alloc] init]];
     
     [self.view addSubview:self.tableView];
     
