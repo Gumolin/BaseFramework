@@ -11,6 +11,7 @@
 #import "OneViewController.h"
 #import "TwoViewController.h"
 #import "ThreeViewController.h"
+#import "OOMyStudyViewController.h"
 @implementation OOTabBarController
 
 - (instancetype)init{
@@ -25,7 +26,8 @@
         ThreeViewController *three = [[ThreeViewController alloc]init];
         [self setupChildVc:three title:@"第三方Demo" image:nil selectedImage:nil];
 
-        
+        OOMyStudyViewController *four = [[OOMyStudyViewController alloc]init];
+        [self setupChildVc:four title:@"个人学习" image:nil selectedImage:nil];
         
     }
     return self;

@@ -56,6 +56,10 @@
 		55894B961DC9EEBB008DE544 /* 开发规范.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 55894B951DC9EEBB008DE544 /* 开发规范.rtf */; };
 		55F36AD81D9D0EA7006634CB /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */; };
 		6D686FC4EC4BB2022D8CEF86 /* libPods-BaseFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6795E52FE2284623FD7B39E /* libPods-BaseFramework.a */; };
+		8E7198CE1DE6E6D70068E388 /* OOMyStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7198CD1DE6E6D70068E388 /* OOMyStudyViewController.m */; };
+		8E7198D21DE6E7A90068E388 /* OOCoreGraphicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7198D11DE6E7A90068E388 /* OOCoreGraphicsViewController.m */; };
+		8E7198D51DE6E7CC0068E388 /* OOGraphicsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7198D41DE6E7CC0068E388 /* OOGraphicsView.m */; };
+		8E7198D81DE7DA530068E388 /* OOGraphicsImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7198D71DE7DA530068E388 /* OOGraphicsImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +178,14 @@
 		55894B951DC9EEBB008DE544 /* 开发规范.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "开发规范.rtf"; sourceTree = "<group>"; };
 		55F36AD61D9D0EA7006634CB /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		8E7198CC1DE6E6D70068E388 /* OOMyStudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMyStudyViewController.h; sourceTree = "<group>"; };
+		8E7198CD1DE6E6D70068E388 /* OOMyStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOMyStudyViewController.m; sourceTree = "<group>"; };
+		8E7198D01DE6E7A90068E388 /* OOCoreGraphicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOCoreGraphicsViewController.h; sourceTree = "<group>"; };
+		8E7198D11DE6E7A90068E388 /* OOCoreGraphicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOCoreGraphicsViewController.m; sourceTree = "<group>"; };
+		8E7198D31DE6E7CC0068E388 /* OOGraphicsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOGraphicsView.h; sourceTree = "<group>"; };
+		8E7198D41DE6E7CC0068E388 /* OOGraphicsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOGraphicsView.m; sourceTree = "<group>"; };
+		8E7198D61DE7DA530068E388 /* OOGraphicsImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOGraphicsImage.h; sourceTree = "<group>"; };
+		8E7198D71DE7DA530068E388 /* OOGraphicsImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOGraphicsImage.m; sourceTree = "<group>"; };
 		8F22BA48BF4383101235A4B4 /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		D6795E52FE2284623FD7B39E /* libPods-BaseFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD4B0A4D3B8BC1DDAB9EFAB /* Pods-BaseFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +224,7 @@
 				550A22BB1DB0D11C0025A2B5 /* 第三方Demo */,
 				550A22BC1DB0D11C0025A2B5 /* 非功能Demo */,
 				550A22C21DB0D11C0025A2B5 /* 功能Demo */,
+				8E7198C81DE6E6410068E388 /* 个人学习 */,
 				138E8BDE1C4A71010095F92B /* Main */,
 			);
 			path = Classes;
@@ -230,6 +243,8 @@
 				138E8BE91C4A75270095F92B /* TwoViewController.m */,
 				550A22C71DB4C4750025A2B5 /* ThreeViewController.h */,
 				550A22C81DB4C4750025A2B5 /* ThreeViewController.m */,
+				8E7198CC1DE6E6D70068E388 /* OOMyStudyViewController.h */,
+				8E7198CD1DE6E6D70068E388 /* OOMyStudyViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -513,6 +528,27 @@
 			path = "多控制器滚动切换";
 			sourceTree = "<group>";
 		};
+		8E7198C81DE6E6410068E388 /* 个人学习 */ = {
+			isa = PBXGroup;
+			children = (
+				8E7198CF1DE6E7780068E388 /* Core Graphics */,
+			);
+			path = "个人学习";
+			sourceTree = "<group>";
+		};
+		8E7198CF1DE6E7780068E388 /* Core Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				8E7198D01DE6E7A90068E388 /* OOCoreGraphicsViewController.h */,
+				8E7198D11DE6E7A90068E388 /* OOCoreGraphicsViewController.m */,
+				8E7198D31DE6E7CC0068E388 /* OOGraphicsView.h */,
+				8E7198D41DE6E7CC0068E388 /* OOGraphicsView.m */,
+				8E7198D61DE7DA530068E388 /* OOGraphicsImage.h */,
+				8E7198D71DE7DA530068E388 /* OOGraphicsImage.m */,
+			);
+			path = "Core Graphics";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -706,14 +742,17 @@
 				5503B28E1D82948D000343EA /* OOLocationManager.m in Sources */,
 				55894B381DC1FDF5008DE544 /* ScrollSubTwoViewController.m in Sources */,
 				138E8BE41C4A74EB0095F92B /* OONavigationController.m in Sources */,
+				8E7198D21DE6E7A90068E388 /* OOCoreGraphicsViewController.m in Sources */,
 				5503B2721D828B15000343EA /* UIImage+Extend.m in Sources */,
 				550A22C41DB0D11C0025A2B5 /* TouchViewController.m in Sources */,
 				5503B2741D828B15000343EA /* UIView+Extend.m in Sources */,
 				138E8BEA1C4A75270095F92B /* TwoViewController.m in Sources */,
 				5503B2BC1D829C0A000343EA /* UIActionSheet+camera.m in Sources */,
+				8E7198CE1DE6E6D70068E388 /* OOMyStudyViewController.m in Sources */,
 				55383ECF1DB606BA0011EDD9 /* BannerViewController.m in Sources */,
 				138E8BE71C4A75100095F92B /* OneViewController.m in Sources */,
 				550A22D51DB4D9E10025A2B5 /* CameraViewController.m in Sources */,
+				8E7198D51DE6E7CC0068E388 /* OOGraphicsView.m in Sources */,
 				550A22E41DB5F7CD0025A2B5 /* OOBannerView.m in Sources */,
 				55894B321DC1FDB2008DE544 /* ScrollMianViewController.m in Sources */,
 				55894B2E1DC1EECA008DE544 /* ImagePickerViewController.m in Sources */,
@@ -733,6 +772,7 @@
 				550A22C91DB4C4750025A2B5 /* ThreeViewController.m in Sources */,
 				5503B29D1D8299E2000343EA /* OOKeyChainTool.m in Sources */,
 				550D1CDF1DBF5CCB00FBAF47 /* PhotoBrowserViewController.m in Sources */,
+				8E7198D81DE7DA530068E388 /* OOGraphicsImage.m in Sources */,
 				5503B2711D828B15000343EA /* NSString+Extend.m in Sources */,
 				550A22CC1DB4C68A0025A2B5 /* KxMenuItemViewController.m in Sources */,
 				550A22E11DB5F5910025A2B5 /* LaunchViewController.m in Sources */,
