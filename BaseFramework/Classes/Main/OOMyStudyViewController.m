@@ -8,6 +8,11 @@
 
 #import "OOMyStudyViewController.h"
 #import "OOCoreGraphicsViewController.h"
+#import "OOCoreTextViewController.h"
+#import "OOAttributedStringViewController.h"
+#import "OONSCacheController.h"
+#import "OOTextKitController.h"
+#import "OONSURLSessionController.h"
 
 @interface OOMyStudyViewController ()
 @property (nonatomic, strong) NSArray *dataSource;
@@ -20,10 +25,20 @@
     [super viewDidLoad];
     self.title = @"个人学习";
     
-    _dataSource = @[NSStringFromClass([OOCoreGraphicsViewController class])
+    _dataSource = @[NSStringFromClass([OOCoreGraphicsViewController class]),
+                    NSStringFromClass([OOCoreTextViewController class]),
+                    NSStringFromClass([OOAttributedStringViewController class]),
+                    NSStringFromClass([OONSCacheController class]),
+                    NSStringFromClass([OOTextKitController class]),
+                    NSStringFromClass([OONSURLSessionController class])
                     ];
     
-    _arrayViewController = @[[[OOCoreGraphicsViewController alloc] init]
+    _arrayViewController = @[[[OOCoreGraphicsViewController alloc] init],
+                             [[OOCoreTextViewController alloc] init],
+                             [[OOAttributedStringViewController alloc] init],
+                              [[OONSCacheController alloc] init],
+                             [[OOTextKitController alloc] init],
+                             [[OONSURLSessionController alloc] init]
                              ];
     
     [self.view addSubview:self.tableView];

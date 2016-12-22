@@ -9,6 +9,7 @@
 #import "TwoViewController.h"
 #import "OneViewController.h"
 #import "ScrollMianViewController.h"
+#import "OOPopOneViewController.h"
 @interface TwoViewController()
 @property (nonatomic, strong) NSArray *arrayName;
 @property (nonatomic, strong) NSArray *arrayViewController;
@@ -20,9 +21,11 @@
 {
     [super viewDidLoad];
     
-    _arrayName = @[NSStringFromClass([ScrollMianViewController class])];
+    _arrayName = @[NSStringFromClass([ScrollMianViewController class]),
+                   NSStringFromClass([OOPopOneViewController class])];
     
-    _arrayViewController = @[[[ScrollMianViewController alloc] init]
+    _arrayViewController = @[[[ScrollMianViewController alloc] init],
+                             [[OOPopOneViewController alloc] init]
                             ];
     
     [self.view addSubview:self.tableView];

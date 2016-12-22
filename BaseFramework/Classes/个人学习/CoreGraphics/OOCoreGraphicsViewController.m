@@ -19,11 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-//    OOGraphicsView *v = [[OOGraphicsView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
-//    [self.view addSubview:v];
-    
-    OOGraphicsImage *v = [[OOGraphicsImage alloc] initWithFrame:self.view.bounds];
+    OOGraphicsView *v = [[OOGraphicsView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
     [self.view addSubview:v];
+    
+//    OOGraphicsImage *v = [[OOGraphicsImage alloc] initWithFrame:self.view.bounds];
+//    [self.view addSubview:v];
 }
 
 

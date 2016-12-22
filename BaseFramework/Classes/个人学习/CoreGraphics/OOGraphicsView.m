@@ -12,9 +12,9 @@
 
 - (void)drawRect:(CGRect)rect {
     
-    [self drawCurve];
+    [self drawShow];
     
-    [self drawCircleAtX:100 Y:50];
+//    [self drawCircleAtX:100 Y:50];
   
     
 }
@@ -109,6 +109,16 @@
     CGContextSetLineWidth(ctx, 3);
     CGContextStrokePath(ctx);
 }
+
+/** 阴影 */
+- (void)drawShow{
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGContextAddRect(ctx, CGRectMake(20, 20, 50, 50));
+    CGContextSetFillColorWithColor(ctx, [UIColor orangeColor].CGColor);
+    CGContextSetShadowWithColor(ctx, CGSizeMake(5, 5), 10, [UIColor greenColor].CGColor);
+    CGContextFillPath(ctx);
+}
+
 
 /** 绘画字符串 */
 - (void)drawString:(CGRect)rect{
