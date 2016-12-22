@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    OOSegmentedControl *control = [OOSegmentedControl segmentedControlWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40) Titles:@[@"1",@"2"]];
+    OOSegmentedControl *control = [OOSegmentedControl segmentedControlWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40) Titles:@[@"1", @"2"] index:0];
     control.clickButtonBlock = ^(NSInteger tag){
       //do something
     };

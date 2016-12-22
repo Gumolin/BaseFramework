@@ -7,23 +7,33 @@
 //
 
 #import "OOSegmentedControl.h"
-#define IndexLineW 80
+
 
 @interface OOSegmentedControl ()
 @property (nonatomic,strong) UIView *indexLine;
-@property (assign, nonatomic) CGFloat IndexLineX;
+@property (assign, nonatomic) CGFloat indexLineW;
 @property (nonatomic,strong) UIButton *selectBtn;
+@property (nonatomic, strong) NSMutableArray *btnArray;
+
+@property (nonatomic, assign) NSInteger index;//指定选中哪个按钮
 @end
 @implementation OOSegmentedControl
 
-+ (instancetype)segmentedControlWithFrame:(CGRect)frame Titles:(NSArray *)titles{
++ (instancetype)segmentedControlWithFrame:(CGRect)frame Titles:(NSArray *)titles index:(NSInteger)index{
     OOSegmentedControl *control = [[OOSegmentedControl alloc] initWithFrame:frame];
+    control.index = index;
     control.backgroundColor = [UIColor whiteColor];
     //setup
     [control setupUI:titles];
     return control;
 }
 
+- (NSMutableArray *)btnArray{
+    if (!_btnArray) {
+        _btnArray = [NSMutableArray array];
+    }
+    return _btnArray;
+}
 /**
  *  文字
  **/
@@ -33,47 +43,55 @@
         return;
     }
     
-    self.IndexLineX = self.bounds.size.width/titles.count/2-IndexLineW/2;
+    _indexLineW = SCREEN_WIDTH/titles.count;
     
-    for (int i = 0; i < titles.count; i++) {
+    //下标线
+    [self addSubview:({
+        self.indexLine = ({
+            UIView *indexLine = [[UIView alloc]init];
+            indexLine.backgroundColor  = self.tintColor ? self.tintColor : ColorMain;
+            indexLine.frame = CGRectMake(0, self.bounds.size.height- 1.5, SCREEN_WIDTH/titles.count,1.5);;
+            indexLine;
+        });
+    })];
+    
+    for (NSInteger i = 0; i < titles.count; i++) {
         
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.tag = i;
-        btn.titleLabel.font = FontBody;
+        btn.titleLabel.font = [UIFont systemFontOfSize:16];
         [btn setTitle:titles[i] forState:UIControlStateNormal];
-        [btn setTitleColor:ColorContent forState:UIControlStateNormal];
+        [btn setTitleColor:ColorBody forState:UIControlStateNormal];
         [btn setTitleColor:self.tintColor ? self.tintColor : ColorMain forState:UIControlStateSelected];
         [btn addTarget:self action:@selector(didSelect:) forControlEvents:UIControlEventTouchDown];
         btn.titleLabel.textAlignment = NSTextAlignmentCenter;
         btn.frame = CGRectMake(i*SCREEN_WIDTH/titles.count, 0, SCREEN_WIDTH/titles.count, self.bounds.size.height);
-        [self addSubview:btn];
+        [self insertSubview:btn belowSubview:self.indexLine];
         
-        if (i==0) {
-            [self didSelect:btn];
-        }
+        [self.btnArray addObject:btn];
         
+        if (self.index == -1) continue;//-1将表示初始化不需要默认下标
+        if (i == self.index) [self didSelect:btn];
         
         //竖分隔线
+        /*
         UIView *lineS = [[UIView alloc]init];
         lineS.frame = CGRectMake(self.bounds.size.width/titles.count*i , 5, 0.5,self.bounds.size.height-10);
-        lineS.backgroundColor  = ColorSeparator;
+        lineS.backgroundColor  = Color_Separator;
         [self addSubview:lineS];
+         */
     }
     
-    //下标线
-    UIView *indexLine = [[UIView alloc]init];
-    self.indexLine = indexLine;
-    self.indexLine.frame = CGRectMake(self.IndexLineX, self.bounds.size.height-3,IndexLineW, 3);
-    indexLine.backgroundColor  = self.tintColor ? self.tintColor : ColorMain;
-    [self addSubview:indexLine];
-    
-    
     //横分隔线
-    UIView *line = [[UIView alloc]init];
-    line.frame = CGRectMake(0, self.bounds.size.height-0.5, self.bounds.size.width,0.5);
-    line.backgroundColor  = ColorSeparator;
-    [self addSubview:line];
+    [self insertSubview:({
+        UIView *line = [[UIView alloc]init];
+        line.frame = CGRectMake(0, self.bounds.size.height- 1.5, self.bounds.size.width,1.5);
+        line.backgroundColor  = ColorSeparator;
+        line;
+        
+    }) belowSubview:self.indexLine];
     
+   
 }
 
 -(void)didSelect:(UIButton*)sender
@@ -83,7 +101,8 @@
     self.selectBtn = sender;
     
     [UIView animateWithDuration:.25 animations:^{
-        [self.indexLine setX:CGRectGetMidX(sender.frame)-IndexLineW/2];
+        CGFloat x = self.indexLineW * self.selectBtn.tag;
+        self.indexLine.frame = CGRectMake(x, self.bounds.size.height-1.5,_indexLineW, 1.5);
     }];
     
     //call back
@@ -94,5 +113,23 @@
     }
 }
 
+
+#pragma mark - Public Method
+- (void)setupSelectButtonIndex:(NSInteger)index{
+    [self.btnArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (idx == index) {
+            UIButton *sender = obj;
+            self.selectBtn.selected = NO;
+            sender.selected = YES;
+            self.selectBtn = sender;
+            
+            [UIView animateWithDuration:.25 animations:^{
+                CGFloat x = self.indexLineW * self.selectBtn.tag;
+                self.indexLine.frame = CGRectMake(x, self.bounds.size.height-1.5,_indexLineW, 1.5);
+            }];
+            *stop = YES;
+        }
+    }];
+}
 
 @end

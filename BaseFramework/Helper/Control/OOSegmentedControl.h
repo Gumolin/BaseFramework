@@ -15,7 +15,13 @@
 
 
 @interface OOSegmentedControl : UIView
-+ (instancetype)segmentedControlWithFrame:(CGRect)frame Titles:(NSArray *)titles;
+
+/** 指定选哪个按钮 */
++ (instancetype)segmentedControlWithFrame:(CGRect)frame Titles:(NSArray *)titles index:(NSInteger)index;
+
+/** 改变下标 */
+- (void)setupSelectButtonIndex:(NSInteger)index;
+
 @property (nonatomic, strong) UIColor *tintColor;
 
 /** 提供block 与 delegate,选择一种即可 */

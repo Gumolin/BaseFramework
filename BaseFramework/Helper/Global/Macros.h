@@ -19,6 +19,8 @@
 /** 顶部栏高度 **/
 #define TARBARHEIGHT 49
 
+// 计算自适应高度
+#define rectHeight(objc)         (Screen_Width / 375.0) * objc
 
 
 #pragma mark - Device
@@ -72,6 +74,8 @@
 #define FontContent [UIFont systemFontOfSize:14]         //一般字号，文章正文
 #define FontMin [UIFont systemFontOfSize:12]             //注释文字，解释说明
 
+
+
 #pragma mark - Use Class
 /** 常用类 */
 /** 常用分类 */
@@ -81,3 +85,27 @@
 #pragma mark - Othor
 /** 生成UUID */
 #define OOUUID [NSUUID UUID].UUIDString
+
+//获取沙盒 Document
+#define kPathDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+//获取沙盒 Cache
+#define kPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+
+
+// 字符串是否为空
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+// 数组是否为空
+#define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
+// 字典是否为空
+#define kDictIsEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)
+// 是否是空对象
+#define kObjectIsEmpty(_object) (_object == nil \
+|| [_object isKindOfClass:[NSNull class]] \
+|| ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
+|| ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
+// 是否空对象
+#define IS_NULL_CLASS(OBJECT) [OBJECT isKindOfClass:[NSNull class]]
+
+//弱引用/强引用  可配对引用在外面用WeakSelf(self)，block用StrongSelf(self)  也可以单独引用在外面用WeakSelf(self) block里面用weakself
+#define WeakSelf(type)  __weak typeof(type) weak##type = type;
+#define StrongSelf(type)  __strong typeof(type) type = weak##type;
