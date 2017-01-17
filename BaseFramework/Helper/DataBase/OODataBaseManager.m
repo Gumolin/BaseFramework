@@ -39,7 +39,25 @@ SingletonM(DataBaseManager);
         block(db, rollback);
     }];
 }
-
+/*
+ FMDB多线程操作事务
+-(void)shiwu
+{
+    [_dataBase inTransaction:^(FMDatabase *db, BOOL *rollback) {
+        for (int i = 0; i<500; i++) {
+            NSString *nId = [NSString stringWithFormat:@"%d",i];
+            NSString *strName = [[NSString alloc] initWithFormat:@"student_%d",i];
+            NSString *sql = @"INSERT INTO Student (id,student_name) VALUES (?,?)";
+            BOOL a = [db executeUpdate:sql,nId,strName];
+            if (!a) {
+                *rollback = YES;
+                return;
+            }
+        }
+    }];
+    
+}
+*/
 -(void)resetDB {
     //数据库路径
 //    queue = [FMDatabaseQueue databaseQueueWithPath:DWDDatabasePath];
