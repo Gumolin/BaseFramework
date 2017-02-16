@@ -17,6 +17,7 @@
 		13F237EC1C3D3C5F00E5D8A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F237EA1C3D3C5F00E5D8A3 /* LaunchScreen.storyboard */; };
 		13F237F71C3D3C5F00E5D8A3 /* BaseFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F237F61C3D3C5F00E5D8A3 /* BaseFrameworkTests.m */; };
 		13F238021C3D3C5F00E5D8A3 /* BaseFrameworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F238011C3D3C5F00E5D8A3 /* BaseFrameworkUITests.m */; };
+		21CB3A0C1E558740004E514D /* OOOperationQueuesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3A0B1E558740004E514D /* OOOperationQueuesController.m */; };
 		5503B2711D828B15000343EA /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B25C1D828B15000343EA /* NSString+Extend.m */; };
 		5503B2721D828B15000343EA /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B25E1D828B15000343EA /* UIImage+Extend.m */; };
 		5503B2731D828B15000343EA /* UILabel+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B2601D828B15000343EA /* UILabel+Extend.m */; };
@@ -117,6 +118,8 @@
 		13F237FD1C3D3C5F00E5D8A3 /* BaseFrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseFrameworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F238011C3D3C5F00E5D8A3 /* BaseFrameworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseFrameworkUITests.m; sourceTree = "<group>"; };
 		13F238031C3D3C5F00E5D8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21CB3A0A1E558740004E514D /* OOOperationQueuesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOOperationQueuesController.h; sourceTree = "<group>"; };
+		21CB3A0B1E558740004E514D /* OOOperationQueuesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOOperationQueuesController.m; sourceTree = "<group>"; };
 		5503B25B1D828B15000343EA /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
 		5503B25C1D828B15000343EA /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
 		5503B25D1D828B15000343EA /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
@@ -376,6 +379,15 @@
 				EBD4B0A4D3B8BC1DDAB9EFAB /* Pods-BaseFramework.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		21CB3A091E55870C004E514D /* OperationQueues */ = {
+			isa = PBXGroup;
+			children = (
+				21CB3A0A1E558740004E514D /* OOOperationQueuesController.h */,
+				21CB3A0B1E558740004E514D /* OOOperationQueuesController.m */,
+			);
+			path = OperationQueues;
 			sourceTree = "<group>";
 		};
 		305C327F136AE3C336EE7DFA /* Frameworks */ = {
@@ -671,6 +683,7 @@
 		8E7198C81DE6E6410068E388 /* 个人学习 */ = {
 			isa = PBXGroup;
 			children = (
+				21CB3A091E55870C004E514D /* OperationQueues */,
 				8E558DEE1E0A813D00905CC2 /* NSURLSession */,
 				8E558DC41E02A09400905CC2 /* RunTime */,
 				8E558DC01E0178C500905CC2 /* TextKit */,
@@ -920,6 +933,7 @@
 				8E558DBF1DFC0D9100905CC2 /* OONSCacheController.m in Sources */,
 				5503B2711D828B15000343EA /* NSString+Extend.m in Sources */,
 				8E31E45B1DEBD4A6002A58C4 /* UINavigationController+Pop.m in Sources */,
+				21CB3A0C1E558740004E514D /* OOOperationQueuesController.m in Sources */,
 				8E31E4791DEBE24B002A58C4 /* StretchTableHeaderViewController.m in Sources */,
 				550A22CC1DB4C68A0025A2B5 /* KxMenuItemViewController.m in Sources */,
 				8E31E4981DEBE29C002A58C4 /* ScrollSubTwoViewController.m in Sources */,
