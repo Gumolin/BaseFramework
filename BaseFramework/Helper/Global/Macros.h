@@ -87,9 +87,11 @@
 #define OOUUID [NSUUID UUID].UUIDString
 
 //获取沙盒 Document
-#define kPathDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
-//获取沙盒 Cache
-#define kPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+#define PATH_DOCUMENT [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
+//获取沙盒 Libaray目录的Cache
+#define PATH_CACHE [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
+//获取泥沙盒 tmp
+#define PATH_TMP NSTemporaryDirectory();
 
 
 // 字符串是否为空

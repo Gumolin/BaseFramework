@@ -14,6 +14,7 @@
 #import "StretchTableHeaderViewController.h"
 #import "LaunchViewController.h"
 #import "BannerViewController.h"
+#import "FPSController.h"
 @interface OneViewController()
 @property (nonatomic, strong) NSArray *arrayName;
 @property (nonatomic, strong) NSArray *arrayViewController;
@@ -33,7 +34,8 @@
                    NSStringFromClass([StretchTableHeaderViewController class]),
                    NSStringFromClass([LaunchViewController class]),
                    NSStringFromClass([BannerViewController class]),
-                   NSStringFromClass([CameraViewController class])];
+                   NSStringFromClass([CameraViewController class]),
+                   NSStringFromClass([FPSController class])];
     
     _arrayViewController = @[[[TouchViewController alloc] init],
                              [[SegmentedControlViewController alloc] init],
@@ -41,7 +43,8 @@
                              [[StretchTableHeaderViewController alloc] init],
                              [[LaunchViewController alloc] init],
                              [[BannerViewController alloc] init],
-                             [[CameraViewController alloc] init]];
+                             [[CameraViewController alloc] init],
+                             [[FPSController alloc] init]];
     
     [self.view addSubview:self.tableView];
 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		138E8BE11C4A743D0095F92B /* OOTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138E8BE01C4A743D0095F92B /* OOTabBarController.m */; };
 		138E8BE41C4A74EB0095F92B /* OONavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138E8BE31C4A74EB0095F92B /* OONavigationController.m */; };
-		138E8BE71C4A75100095F92B /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138E8BE61C4A75100095F92B /* OneViewController.m */; };
 		138E8BEA1C4A75270095F92B /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 138E8BE91C4A75270095F92B /* TwoViewController.m */; };
 		13F237DE1C3D3C5F00E5D8A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F237DD1C3D3C5F00E5D8A3 /* main.m */; };
 		13F237E11C3D3C5F00E5D8A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F237E01C3D3C5F00E5D8A3 /* AppDelegate.m */; };
@@ -17,7 +16,16 @@
 		13F237EC1C3D3C5F00E5D8A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F237EA1C3D3C5F00E5D8A3 /* LaunchScreen.storyboard */; };
 		13F237F71C3D3C5F00E5D8A3 /* BaseFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F237F61C3D3C5F00E5D8A3 /* BaseFrameworkTests.m */; };
 		13F238021C3D3C5F00E5D8A3 /* BaseFrameworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F238011C3D3C5F00E5D8A3 /* BaseFrameworkUITests.m */; };
+		2112BAEF1E5D6A360093A1A7 /* OOVideoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2112BAEE1E5D6A360093A1A7 /* OOVideoPlayView.m */; };
+		2135A2841E5C1D16005854E2 /* OOProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2135A2831E5C1D16005854E2 /* OOProxy.m */; };
+		2135A2881E5C1DA7005854E2 /* OOVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2135A2871E5C1DA7005854E2 /* OOVideoController.m */; };
+		2135A28B1E5C42B0005854E2 /* OOVVIFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2135A28A1E5C42B0005854E2 /* OOVVIFileManager.m */; };
+		2135A28E1E5C6041005854E2 /* OOVideoRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2135A28D1E5C6041005854E2 /* OOVideoRecordView.m */; };
 		21CB3A0C1E558740004E514D /* OOOperationQueuesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3A0B1E558740004E514D /* OOOperationQueuesController.m */; };
+		21CB3A231E56FF1C004E514D /* OOTextFiledCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3A221E56FF1C004E514D /* OOTextFiledCustomController.m */; };
+		21CB3A291E5AA963004E514D /* FPSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3A281E5AA963004E514D /* FPSController.m */; };
+		21CB3A2C1E5AAAE3004E514D /* FPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3A2B1E5AAAE3004E514D /* FPSLabel.m */; };
+		21CB3A2E1E5AAB70004E514D /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3A2D1E5AAB70004E514D /* OneViewController.m */; };
 		5503B2711D828B15000343EA /* NSString+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B25C1D828B15000343EA /* NSString+Extend.m */; };
 		5503B2721D828B15000343EA /* UIImage+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B25E1D828B15000343EA /* UIImage+Extend.m */; };
 		5503B2731D828B15000343EA /* UILabel+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = 5503B2601D828B15000343EA /* UILabel+Extend.m */; };
@@ -101,7 +109,6 @@
 		138E8BE21C4A74EB0095F92B /* OONavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OONavigationController.h; sourceTree = "<group>"; };
 		138E8BE31C4A74EB0095F92B /* OONavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OONavigationController.m; sourceTree = "<group>"; };
 		138E8BE51C4A75100095F92B /* OneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
-		138E8BE61C4A75100095F92B /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
 		138E8BE81C4A75270095F92B /* TwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
 		138E8BE91C4A75270095F92B /* TwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
 		138E8BEB1C4A79890095F92B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -118,8 +125,25 @@
 		13F237FD1C3D3C5F00E5D8A3 /* BaseFrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseFrameworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F238011C3D3C5F00E5D8A3 /* BaseFrameworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseFrameworkUITests.m; sourceTree = "<group>"; };
 		13F238031C3D3C5F00E5D8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2112BAED1E5D6A360093A1A7 /* OOVideoPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOVideoPlayView.h; sourceTree = "<group>"; };
+		2112BAEE1E5D6A360093A1A7 /* OOVideoPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOVideoPlayView.m; sourceTree = "<group>"; };
+		2135A2821E5C1D16005854E2 /* OOProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOProxy.h; sourceTree = "<group>"; };
+		2135A2831E5C1D16005854E2 /* OOProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOProxy.m; sourceTree = "<group>"; };
+		2135A2861E5C1DA7005854E2 /* OOVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOVideoController.h; sourceTree = "<group>"; };
+		2135A2871E5C1DA7005854E2 /* OOVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOVideoController.m; sourceTree = "<group>"; };
+		2135A2891E5C42B0005854E2 /* OOVVIFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOVVIFileManager.h; sourceTree = "<group>"; };
+		2135A28A1E5C42B0005854E2 /* OOVVIFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOVVIFileManager.m; sourceTree = "<group>"; };
+		2135A28C1E5C6041005854E2 /* OOVideoRecordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOVideoRecordView.h; sourceTree = "<group>"; };
+		2135A28D1E5C6041005854E2 /* OOVideoRecordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOVideoRecordView.m; sourceTree = "<group>"; };
 		21CB3A0A1E558740004E514D /* OOOperationQueuesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOOperationQueuesController.h; sourceTree = "<group>"; };
 		21CB3A0B1E558740004E514D /* OOOperationQueuesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOOperationQueuesController.m; sourceTree = "<group>"; };
+		21CB3A211E56FF1C004E514D /* OOTextFiledCustomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOTextFiledCustomController.h; sourceTree = "<group>"; };
+		21CB3A221E56FF1C004E514D /* OOTextFiledCustomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOTextFiledCustomController.m; sourceTree = "<group>"; };
+		21CB3A271E5AA963004E514D /* FPSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSController.h; sourceTree = "<group>"; };
+		21CB3A281E5AA963004E514D /* FPSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSController.m; sourceTree = "<group>"; };
+		21CB3A2A1E5AAAE3004E514D /* FPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPSLabel.h; sourceTree = "<group>"; };
+		21CB3A2B1E5AAAE3004E514D /* FPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSLabel.m; sourceTree = "<group>"; };
+		21CB3A2D1E5AAB70004E514D /* OneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
 		5503B25B1D828B15000343EA /* NSString+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extend.h"; sourceTree = "<group>"; };
 		5503B25C1D828B15000343EA /* NSString+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extend.m"; sourceTree = "<group>"; };
 		5503B25D1D828B15000343EA /* UIImage+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extend.h"; sourceTree = "<group>"; };
@@ -287,7 +311,7 @@
 				138E8BE21C4A74EB0095F92B /* OONavigationController.h */,
 				138E8BE31C4A74EB0095F92B /* OONavigationController.m */,
 				138E8BE51C4A75100095F92B /* OneViewController.h */,
-				138E8BE61C4A75100095F92B /* OneViewController.m */,
+				21CB3A2D1E5AAB70004E514D /* OneViewController.m */,
 				138E8BE81C4A75270095F92B /* TwoViewController.h */,
 				138E8BE91C4A75270095F92B /* TwoViewController.m */,
 				550A22C71DB4C4750025A2B5 /* ThreeViewController.h */,
@@ -381,6 +405,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2135A2851E5C1D53005854E2 /* 录制视频 */ = {
+			isa = PBXGroup;
+			children = (
+				2135A2861E5C1DA7005854E2 /* OOVideoController.h */,
+				2135A2871E5C1DA7005854E2 /* OOVideoController.m */,
+				2135A28C1E5C6041005854E2 /* OOVideoRecordView.h */,
+				2135A28D1E5C6041005854E2 /* OOVideoRecordView.m */,
+				2112BAED1E5D6A360093A1A7 /* OOVideoPlayView.h */,
+				2112BAEE1E5D6A360093A1A7 /* OOVideoPlayView.m */,
+				2135A2891E5C42B0005854E2 /* OOVVIFileManager.h */,
+				2135A28A1E5C42B0005854E2 /* OOVVIFileManager.m */,
+			);
+			path = "录制视频";
+			sourceTree = "<group>";
+		};
 		21CB3A091E55870C004E514D /* OperationQueues */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +427,15 @@
 				21CB3A0B1E558740004E514D /* OOOperationQueuesController.m */,
 			);
 			path = OperationQueues;
+			sourceTree = "<group>";
+		};
+		21CB3A201E56FECE004E514D /* 自定义TextField菜单 */ = {
+			isa = PBXGroup;
+			children = (
+				21CB3A211E56FF1C004E514D /* OOTextFiledCustomController.h */,
+				21CB3A221E56FF1C004E514D /* OOTextFiledCustomController.m */,
+			);
+			path = "自定义TextField菜单";
 			sourceTree = "<group>";
 		};
 		305C327F136AE3C336EE7DFA /* Frameworks */ = {
@@ -482,6 +530,8 @@
 		5503B28B1D82948D000343EA /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				2135A2821E5C1D16005854E2 /* OOProxy.h */,
+				2135A2831E5C1D16005854E2 /* OOProxy.m */,
 				5503B28C1D82948D000343EA /* OOLocationManager.h */,
 				5503B28D1D82948D000343EA /* OOLocationManager.m */,
 				5503B29B1D8299E2000343EA /* OOKeyChainTool.h */,
@@ -516,6 +566,8 @@
 				5503B2B71D829C0A000343EA /* UIActionSheet+camera.m */,
 				550A22E21DB5F7CD0025A2B5 /* OOBannerView.h */,
 				550A22E31DB5F7CD0025A2B5 /* OOBannerView.m */,
+				21CB3A2A1E5AAAE3004E514D /* FPSLabel.h */,
+				21CB3A2B1E5AAAE3004E514D /* FPSLabel.m */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -550,6 +602,8 @@
 				8E31E4711DEBE24B002A58C4 /* SegmentedControlViewController.m */,
 				8E31E4721DEBE24B002A58C4 /* StretchTableHeaderViewController.h */,
 				8E31E4731DEBE24B002A58C4 /* StretchTableHeaderViewController.m */,
+				21CB3A271E5AA963004E514D /* FPSController.h */,
+				21CB3A281E5AA963004E514D /* FPSController.m */,
 			);
 			path = "自定义控件Demo";
 			sourceTree = "<group>";
@@ -557,6 +611,8 @@
 		8E31E47A1DEBE29C002A58C4 /* 功能Demo */ = {
 			isa = PBXGroup;
 			children = (
+				2135A2851E5C1D53005854E2 /* 录制视频 */,
+				21CB3A201E56FECE004E514D /* 自定义TextField菜单 */,
 				8E31E47B1DEBE29C002A58C4 /* pop手势与pop系统事件 */,
 				8E31E4821DEBE29C002A58C4 /* View响应事件 */,
 				8E31E4871DEBE29C002A58C4 /* 多控制器滚动切换 */,
@@ -765,6 +821,7 @@
 				TargetAttributes = {
 					13F237D81C3D3C5F00E5D8A3 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 68SA3JHC33;
 					};
 					13F237F11C3D3C5F00E5D8A3 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -884,6 +941,7 @@
 				8E558DD21E02A12F00905CC2 /* Dog.m in Sources */,
 				5503B2911D8295DD000343EA /* BaseViewController.m in Sources */,
 				5503B2731D828B15000343EA /* UILabel+Extend.m in Sources */,
+				2135A2881E5C1DA7005854E2 /* OOVideoController.m in Sources */,
 				8E558DF11E0A816000905CC2 /* OONSURLSessionController.m in Sources */,
 				8E31E4911DEBE29C002A58C4 /* OOPopThreeViewController.m in Sources */,
 				8E31E4951DEBE29C002A58C4 /* ScrollMianViewController.m in Sources */,
@@ -892,7 +950,10 @@
 				138E8BE41C4A74EB0095F92B /* OONavigationController.m in Sources */,
 				8E31E4971DEBE29C002A58C4 /* ScrollSubThreeViewController.m in Sources */,
 				5503B2721D828B15000343EA /* UIImage+Extend.m in Sources */,
+				2135A28B1E5C42B0005854E2 /* OOVVIFileManager.m in Sources */,
+				21CB3A2E1E5AAB70004E514D /* OneViewController.m in Sources */,
 				8E0CFEFA1DF00A8A001F263D /* OOSegmentedControl.m in Sources */,
+				2135A28E1E5C6041005854E2 /* OOVideoRecordView.m in Sources */,
 				5503B2741D828B15000343EA /* UIView+Extend.m in Sources */,
 				8E31E4781DEBE24B002A58C4 /* SegmentedControlViewController.m in Sources */,
 				8E558DD01E02A12F00905CC2 /* Cat.m in Sources */,
@@ -900,7 +961,6 @@
 				5503B2BC1D829C0A000343EA /* UIActionSheet+camera.m in Sources */,
 				8E31E4751DEBE24B002A58C4 /* CameraViewController.m in Sources */,
 				8E7198CE1DE6E6D70068E388 /* OOMyStudyViewController.m in Sources */,
-				138E8BE71C4A75100095F92B /* OneViewController.m in Sources */,
 				550A22E41DB5F7CD0025A2B5 /* OOBannerView.m in Sources */,
 				8E31E4A41DED4C37002A58C4 /* OOGraphicsView.m in Sources */,
 				55894B2E1DC1EECA008DE544 /* ImagePickerViewController.m in Sources */,
@@ -923,13 +983,18 @@
 				8E31E4961DEBE29C002A58C4 /* ScrollSubOneViewController.m in Sources */,
 				8E31E4921DEBE29C002A58C4 /* OOPopTwoViewController.m in Sources */,
 				550A22C91DB4C4750025A2B5 /* ThreeViewController.m in Sources */,
+				21CB3A231E56FF1C004E514D /* OOTextFiledCustomController.m in Sources */,
+				2135A2841E5C1D16005854E2 /* OOProxy.m in Sources */,
 				5503B29D1D8299E2000343EA /* OOKeyChainTool.m in Sources */,
+				21CB3A2C1E5AAAE3004E514D /* FPSLabel.m in Sources */,
 				8E31E4A71DED6348002A58C4 /* OOCoreTextViewController.m in Sources */,
 				8E31E4941DEBE29C002A58C4 /* TouchViewController.m in Sources */,
 				8E31E4931DEBE29C002A58C4 /* OOCircleView.m in Sources */,
 				550D1CDF1DBF5CCB00FBAF47 /* PhotoBrowserViewController.m in Sources */,
 				8E31E4AE1DEFD4A1002A58C4 /* OOAttributedStringViewController.m in Sources */,
 				8E31E4901DEBE29C002A58C4 /* OOPopOneViewController.m in Sources */,
+				2112BAEF1E5D6A360093A1A7 /* OOVideoPlayView.m in Sources */,
+				21CB3A291E5AA963004E514D /* FPSController.m in Sources */,
 				8E558DBF1DFC0D9100905CC2 /* OONSCacheController.m in Sources */,
 				5503B2711D828B15000343EA /* NSString+Extend.m in Sources */,
 				8E31E45B1DEBD4A6002A58C4 /* UINavigationController+Pop.m in Sources */,
@@ -1071,11 +1136,11 @@
 			baseConfigurationReference = 8F22BA48BF4383101235A4B4 /* Pods-BaseFramework.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 68SA3JHC33;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseFramework/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseFramework/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1091,11 +1156,11 @@
 			baseConfigurationReference = EBD4B0A4D3B8BC1DDAB9EFAB /* Pods-BaseFramework.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 68SA3JHC33;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseFramework/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = BaseFramework/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

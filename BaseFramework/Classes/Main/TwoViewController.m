@@ -10,6 +10,8 @@
 #import "OneViewController.h"
 #import "ScrollMianViewController.h"
 #import "OOPopOneViewController.h"
+#import "OOTextFiledCustomController.h"
+#import "OOVideoController.h"
 @interface TwoViewController()
 @property (nonatomic, strong) NSArray *arrayName;
 @property (nonatomic, strong) NSArray *arrayViewController;
@@ -22,15 +24,18 @@
     [super viewDidLoad];
     
     _arrayName = @[NSStringFromClass([ScrollMianViewController class]),
-                   NSStringFromClass([OOPopOneViewController class])];
-    
-    _arrayViewController = @[[[ScrollMianViewController alloc] init],
-                             [[OOPopOneViewController alloc] init]
-                            ];
+                   NSStringFromClass([OOPopOneViewController class]),
+                   NSStringFromClass([OOTextFiledCustomController class]),
+                   NSStringFromClass([OOVideoController class])
+                   ];
     
     [self.view addSubview:self.tableView];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    self.arrayViewController = nil;
+    [super viewWillAppear:animated];
+}
 #pragma mark - TableView Datasource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -52,7 +57,23 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UIViewController *vc = self.arrayViewController[indexPath.row];
+    if (indexPath.row == 3) {
+        [self presentViewController:self.arrayViewController[indexPath.row] animated:YES completion:nil];
+        return;
+    }
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:self.arrayViewController[indexPath.row] animated:YES];
+}
+
+#pragma mark - Getter
+- (NSArray *)arrayViewController{
+    if (!_arrayViewController) {
+        _arrayViewController = @[[[ScrollMianViewController alloc] init],
+                                 [[OOPopOneViewController alloc] init],
+                                 [[OOTextFiledCustomController alloc] init],
+                                 [[OOVideoController alloc] init]
+                                 ];
+    }
+    return _arrayViewController;
 }
 @end

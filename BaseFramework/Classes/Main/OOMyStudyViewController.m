@@ -13,6 +13,7 @@
 #import "OONSCacheController.h"
 #import "OOTextKitController.h"
 #import "OONSURLSessionController.h"
+#import "OOOperationQueuesController.h"
 
 @interface OOMyStudyViewController ()
 @property (nonatomic, strong) NSArray *dataSource;
@@ -30,7 +31,8 @@
                     NSStringFromClass([OOAttributedStringViewController class]),
                     NSStringFromClass([OONSCacheController class]),
                     NSStringFromClass([OOTextKitController class]),
-                    NSStringFromClass([OONSURLSessionController class])
+                    NSStringFromClass([OONSURLSessionController class]),
+                    NSStringFromClass([OOOperationQueuesController class])
                     ];
     
     _arrayViewController = @[[[OOCoreGraphicsViewController alloc] init],
@@ -38,7 +40,8 @@
                              [[OOAttributedStringViewController alloc] init],
                               [[OONSCacheController alloc] init],
                              [[OOTextKitController alloc] init],
-                             [[OONSURLSessionController alloc] init]
+                             [[OONSURLSessionController alloc] init],
+                             [[OOOperationQueuesController alloc] init]
                              ];
     
     [self.view addSubview:self.tableView];
