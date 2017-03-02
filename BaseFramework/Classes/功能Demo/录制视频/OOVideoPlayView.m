@@ -6,17 +6,17 @@
 //  Copyright © 2017年 Mantis-man. All rights reserved.
 //
 
-#import "JFVideoPlayView.h"
+#import "OOVideoPlayView.h"
 
 #import <AVFoundation/AVFoundation.h>
 
-@interface JFVideoPlayView ()
+@interface OOVideoPlayView ()
 @property (nonatomic, strong) AVPlayer *player;
 @property (nonatomic, strong) AVPlayerLayer *playerLayer;
 @property (nonatomic, strong) AVPlayerItem *playerItem;
 @end
 
-@implementation JFVideoPlayView
+@implementation OOVideoPlayView
 
 #pragma mark - life Cycle
 - (instancetype)initWithFrame:(CGRect)frame{

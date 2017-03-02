@@ -16,7 +16,7 @@
 		13F237EC1C3D3C5F00E5D8A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F237EA1C3D3C5F00E5D8A3 /* LaunchScreen.storyboard */; };
 		13F237F71C3D3C5F00E5D8A3 /* BaseFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F237F61C3D3C5F00E5D8A3 /* BaseFrameworkTests.m */; };
 		13F238021C3D3C5F00E5D8A3 /* BaseFrameworkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13F238011C3D3C5F00E5D8A3 /* BaseFrameworkUITests.m */; };
-		2112BAEF1E5D6A360093A1A7 /* JFVideoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2112BAEE1E5D6A360093A1A7 /* JFVideoPlayView.m */; };
+		2112BAEF1E5D6A360093A1A7 /* OOVideoPlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2112BAEE1E5D6A360093A1A7 /* OOVideoPlayView.m */; };
 		2135A2841E5C1D16005854E2 /* OOProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2135A2831E5C1D16005854E2 /* OOProxy.m */; };
 		2135A2881E5C1DA7005854E2 /* OOVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2135A2871E5C1DA7005854E2 /* OOVideoController.m */; };
 		2135A28B1E5C42B0005854E2 /* OOVVIFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2135A28A1E5C42B0005854E2 /* OOVVIFileManager.m */; };
@@ -126,8 +126,8 @@
 		13F237FD1C3D3C5F00E5D8A3 /* BaseFrameworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseFrameworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F238011C3D3C5F00E5D8A3 /* BaseFrameworkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseFrameworkUITests.m; sourceTree = "<group>"; };
 		13F238031C3D3C5F00E5D8A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2112BAED1E5D6A360093A1A7 /* JFVideoPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFVideoPlayView.h; sourceTree = "<group>"; };
-		2112BAEE1E5D6A360093A1A7 /* JFVideoPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFVideoPlayView.m; sourceTree = "<group>"; };
+		2112BAED1E5D6A360093A1A7 /* OOVideoPlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOVideoPlayView.h; sourceTree = "<group>"; };
+		2112BAEE1E5D6A360093A1A7 /* OOVideoPlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOVideoPlayView.m; sourceTree = "<group>"; };
 		2135A2821E5C1D16005854E2 /* OOProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOProxy.h; sourceTree = "<group>"; };
 		2135A2831E5C1D16005854E2 /* OOProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOProxy.m; sourceTree = "<group>"; };
 		2135A2861E5C1DA7005854E2 /* OOVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOVideoController.h; sourceTree = "<group>"; };
@@ -414,8 +414,8 @@
 				2135A2871E5C1DA7005854E2 /* OOVideoController.m */,
 				2135A28C1E5C6041005854E2 /* OOVideoRecordView.h */,
 				2135A28D1E5C6041005854E2 /* OOVideoRecordView.m */,
-				2112BAED1E5D6A360093A1A7 /* JFVideoPlayView.h */,
-				2112BAEE1E5D6A360093A1A7 /* JFVideoPlayView.m */,
+				2112BAED1E5D6A360093A1A7 /* OOVideoPlayView.h */,
+				2112BAEE1E5D6A360093A1A7 /* OOVideoPlayView.m */,
 				2135A2891E5C42B0005854E2 /* OOVVIFileManager.h */,
 				2135A28A1E5C42B0005854E2 /* OOVVIFileManager.m */,
 			);
@@ -997,7 +997,7 @@
 				550D1CDF1DBF5CCB00FBAF47 /* PhotoBrowserViewController.m in Sources */,
 				8E31E4AE1DEFD4A1002A58C4 /* OOAttributedStringViewController.m in Sources */,
 				8E31E4901DEBE29C002A58C4 /* OOPopOneViewController.m in Sources */,
-				2112BAEF1E5D6A360093A1A7 /* JFVideoPlayView.m in Sources */,
+				2112BAEF1E5D6A360093A1A7 /* OOVideoPlayView.m in Sources */,
 				21CB3A291E5AA963004E514D /* FPSController.m in Sources */,
 				8E558DBF1DFC0D9100905CC2 /* OONSCacheController.m in Sources */,
 				5503B2711D828B15000343EA /* NSString+Extend.m in Sources */,
