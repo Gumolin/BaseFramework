@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OOVideoPlayView : UIView
+@interface JFVideoPlayView : UIView
 
 /** 
  视频播放url

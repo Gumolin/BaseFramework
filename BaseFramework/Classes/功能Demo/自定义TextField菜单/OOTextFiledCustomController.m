@@ -7,7 +7,7 @@
 //
 
 #import "OOTextFiledCustomController.h"
-
+#import "UIImage+GIF.h"
 @interface OOTextFiledCustomController ()
 
 @end
@@ -17,8 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UITextField *tf = [[UITextField alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
-    [self.view addSubview:tf];
+    UIImageView *v = [[UIImageView alloc] init];
+    v.frame = CGRectMake(0, 0, 200, 200);
+    v.image = [UIImage sd_animatedGIFNamed:@"lAHOqJGKQc0C7s0C7g_750_750"];
+
+    v.animationDuration = 1;
+
+    [self.view addSubview:v];
+
+    
+    
 }
 
 
