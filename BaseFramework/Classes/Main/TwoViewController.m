@@ -12,6 +12,8 @@
 #import "OOPopOneViewController.h"
 #import "OOTextFiledCustomController.h"
 #import "OOVideoController.h"
+#import "OOFingerprintLockController.h"
+#import "OOLocalPushController.h"
 @interface TwoViewController()
 @property (nonatomic, strong) NSArray *arrayName;
 @property (nonatomic, strong) NSArray *arrayViewController;
@@ -26,7 +28,9 @@
     _arrayName = @[NSStringFromClass([ScrollMianViewController class]),
                    NSStringFromClass([OOPopOneViewController class]),
                    NSStringFromClass([OOTextFiledCustomController class]),
-                   NSStringFromClass([OOVideoController class])
+                   NSStringFromClass([OOVideoController class]),
+                   NSStringFromClass([OOFingerprintLockController class]),
+                   NSStringFromClass([OOLocalPushController class])
                    ];
     
     [self.view addSubview:self.tableView];
@@ -71,7 +75,9 @@
         _arrayViewController = @[[[ScrollMianViewController alloc] init],
                                  [[OOPopOneViewController alloc] init],
                                  [[OOTextFiledCustomController alloc] init],
-                                 [[OOVideoController alloc] init]
+                                 [[OOVideoController alloc] init],
+                                 [[OOFingerprintLockController alloc] init],
+                                 [[OOLocalPushController alloc] init]
                                  ];
     }
     return _arrayViewController;

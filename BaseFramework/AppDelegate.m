@@ -16,7 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    
     
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
@@ -25,7 +25,32 @@
     window.backgroundColor = [UIColor whiteColor];
     [window makeKeyAndVisible];
     self.window = window;
+    
+    if ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0) {
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
+        [application registerUserNotificationSettings:settings];
+    }
+    // 界面的跳转(针对应用程序被杀死的状态下的跳转)
+    //要判断，是通过哪种类型通知来打开的
+    if (launchOptions[UIApplicationLaunchOptionsLocalNotificationKey]) {
+        // 跳转代码
+        OOLog(@"%@",launchOptions);
+    }
+
     return YES;
+}
+
+/*
+ 应用程序在进入前台,或者在前台的时候都会执行该方法
+ */
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    // 必须要监听--应用程序在后台的时候进行的跳转
+    if (application.applicationState == UIApplicationStateInactive) {
+        NSLog(@"进行界面的跳转");
+        // 如果在上面的通知方法中设置了一些，可以在这里打印额外信息的内容，就做到监听，也就可以根据额外信息，做出相应的判断
+        NSLog(@"%@", notification.userInfo);
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

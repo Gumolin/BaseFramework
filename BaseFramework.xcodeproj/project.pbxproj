@@ -53,6 +53,8 @@
 		55894B961DC9EEBB008DE544 /* 开发规范.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 55894B951DC9EEBB008DE544 /* 开发规范.rtf */; };
 		55F36AD81D9D0EA7006634CB /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */; };
 		6D686FC4EC4BB2022D8CEF86 /* libPods-BaseFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6795E52FE2284623FD7B39E /* libPods-BaseFramework.a */; };
+		8E02F2F21E72A75C00F892F9 /* OOFingerprintLockController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E02F2F11E72A75C00F892F9 /* OOFingerprintLockController.m */; };
+		8E02F2F61E72AC6600F892F9 /* OOLocalPushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E02F2F51E72AC6600F892F9 /* OOLocalPushController.m */; };
 		8E0CFEFA1DF00A8A001F263D /* OOSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CFEF91DF00A8A001F263D /* OOSegmentedControl.m */; };
 		8E23F7B51E6E9EE10077A451 /* OORunloopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E23F7B31E6E9EE10077A451 /* OORunloopController.m */; };
 		8E23F7B61E6E9EE10077A451 /* OORunloopController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E23F7B41E6E9EE10077A451 /* OORunloopController.xib */; };
@@ -200,6 +202,10 @@
 		55894B951DC9EEBB008DE544 /* 开发规范.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "开发规范.rtf"; sourceTree = "<group>"; };
 		55F36AD61D9D0EA7006634CB /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		8E02F2F01E72A75C00F892F9 /* OOFingerprintLockController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOFingerprintLockController.h; sourceTree = "<group>"; };
+		8E02F2F11E72A75C00F892F9 /* OOFingerprintLockController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOFingerprintLockController.m; sourceTree = "<group>"; };
+		8E02F2F41E72AC6600F892F9 /* OOLocalPushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOLocalPushController.h; sourceTree = "<group>"; };
+		8E02F2F51E72AC6600F892F9 /* OOLocalPushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOLocalPushController.m; sourceTree = "<group>"; };
 		8E0CFEF81DF00A8A001F263D /* OOSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOSegmentedControl.h; sourceTree = "<group>"; };
 		8E0CFEF91DF00A8A001F263D /* OOSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOSegmentedControl.m; sourceTree = "<group>"; };
 		8E23F7B21E6E9EE10077A451 /* OORunloopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OORunloopController.h; sourceTree = "<group>"; };
@@ -605,6 +611,24 @@
 			path = "第三方Demo";
 			sourceTree = "<group>";
 		};
+		8E02F2EC1E72A6D800F892F9 /* 指纹解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				8E02F2F01E72A75C00F892F9 /* OOFingerprintLockController.h */,
+				8E02F2F11E72A75C00F892F9 /* OOFingerprintLockController.m */,
+			);
+			path = "指纹解锁";
+			sourceTree = "<group>";
+		};
+		8E02F2F31E72AC0F00F892F9 /* 本地推送 */ = {
+			isa = PBXGroup;
+			children = (
+				8E02F2F41E72AC6600F892F9 /* OOLocalPushController.h */,
+				8E02F2F51E72AC6600F892F9 /* OOLocalPushController.m */,
+			);
+			path = "本地推送";
+			sourceTree = "<group>";
+		};
 		8E23F7B11E6E9EB10077A451 /* Runloop */ = {
 			isa = PBXGroup;
 			children = (
@@ -639,6 +663,8 @@
 		8E31E47A1DEBE29C002A58C4 /* 功能Demo */ = {
 			isa = PBXGroup;
 			children = (
+				8E02F2F31E72AC0F00F892F9 /* 本地推送 */,
+				8E02F2EC1E72A6D800F892F9 /* 指纹解锁 */,
 				2135A2851E5C1D53005854E2 /* 录制视频 */,
 				21CB3A201E56FECE004E514D /* 自定义TextField菜单 */,
 				8E31E47B1DEBE29C002A58C4 /* pop手势与pop系统事件 */,
@@ -965,6 +991,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E02F2F21E72A75C00F892F9 /* OOFingerprintLockController.m in Sources */,
 				8E31E4AA1DED6478002A58C4 /* OOCoreTextView.m in Sources */,
 				5503B2B91D829C0A000343EA /* OOQRImageView.m in Sources */,
 				5503B2761D828B15000343EA /* Const.m in Sources */,
@@ -1037,6 +1064,7 @@
 				550A22CC1DB4C68A0025A2B5 /* KxMenuItemViewController.m in Sources */,
 				8E31E4981DEBE29C002A58C4 /* ScrollSubTwoViewController.m in Sources */,
 				8E558DD31E02A12F00905CC2 /* Person.m in Sources */,
+				8E02F2F61E72AC6600F892F9 /* OOLocalPushController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
