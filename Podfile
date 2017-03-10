@@ -6,4 +6,5 @@ pod 'FMDB', '~> 2.6.2'
 pod 'UICKeyChainStore', '~> 2.1.0'
 pod 'TZImagePickerController', '~> 1.7.1'
 pod 'IDMPhotoBrowser+WeChat', '~> 1.9.7'
+pod 'AliyunOSSiOS', '~> 2.6.0'
 end

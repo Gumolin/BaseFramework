@@ -54,6 +54,8 @@
 		55F36AD81D9D0EA7006634CB /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */; };
 		6D686FC4EC4BB2022D8CEF86 /* libPods-BaseFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D6795E52FE2284623FD7B39E /* libPods-BaseFramework.a */; };
 		8E0CFEFA1DF00A8A001F263D /* OOSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0CFEF91DF00A8A001F263D /* OOSegmentedControl.m */; };
+		8E23F7B51E6E9EE10077A451 /* OORunloopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E23F7B31E6E9EE10077A451 /* OORunloopController.m */; };
+		8E23F7B61E6E9EE10077A451 /* OORunloopController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E23F7B41E6E9EE10077A451 /* OORunloopController.xib */; };
 		8E31E45B1DEBD4A6002A58C4 /* UINavigationController+Pop.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E31E45A1DEBD4A6002A58C4 /* UINavigationController+Pop.m */; };
 		8E31E4741DEBE24B002A58C4 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E31E4691DEBE24B002A58C4 /* BannerViewController.m */; };
 		8E31E4751DEBE24B002A58C4 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E31E46B1DEBE24B002A58C4 /* CameraViewController.m */; };
@@ -84,6 +86,8 @@
 		8E558DD21E02A12F00905CC2 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E558DCD1E02A12F00905CC2 /* Dog.m */; };
 		8E558DD31E02A12F00905CC2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E558DCF1E02A12F00905CC2 /* Person.m */; };
 		8E558DF11E0A816000905CC2 /* OONSURLSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E558DF01E0A816000905CC2 /* OONSURLSessionController.m */; };
+		8E655CCC1E72807A00876105 /* OOAliyunManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E655CC91E72807A00876105 /* OOAliyunManager.m */; };
+		8E655CCD1E72807A00876105 /* OOFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E655CCB1E72807A00876105 /* OOFileManager.m */; };
 		8E7198CE1DE6E6D70068E388 /* OOMyStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7198CD1DE6E6D70068E388 /* OOMyStudyViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -198,6 +202,9 @@
 		55F36AD71D9D0EA7006634CB /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		8E0CFEF81DF00A8A001F263D /* OOSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOSegmentedControl.h; sourceTree = "<group>"; };
 		8E0CFEF91DF00A8A001F263D /* OOSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOSegmentedControl.m; sourceTree = "<group>"; };
+		8E23F7B21E6E9EE10077A451 /* OORunloopController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OORunloopController.h; sourceTree = "<group>"; };
+		8E23F7B31E6E9EE10077A451 /* OORunloopController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OORunloopController.m; sourceTree = "<group>"; };
+		8E23F7B41E6E9EE10077A451 /* OORunloopController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OORunloopController.xib; sourceTree = "<group>"; };
 		8E31E4591DEBD4A6002A58C4 /* UINavigationController+Pop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Pop.h"; sourceTree = "<group>"; };
 		8E31E45A1DEBD4A6002A58C4 /* UINavigationController+Pop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Pop.m"; sourceTree = "<group>"; };
 		8E31E4661DEBDB66002A58C4 /* SwizzlingDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwizzlingDefine.h; sourceTree = "<group>"; };
@@ -259,6 +266,10 @@
 		8E558DCF1E02A12F00905CC2 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		8E558DEF1E0A816000905CC2 /* OONSURLSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OONSURLSessionController.h; sourceTree = "<group>"; };
 		8E558DF01E0A816000905CC2 /* OONSURLSessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OONSURLSessionController.m; sourceTree = "<group>"; };
+		8E655CC81E72807A00876105 /* OOAliyunManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOAliyunManager.h; sourceTree = "<group>"; };
+		8E655CC91E72807A00876105 /* OOAliyunManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOAliyunManager.m; sourceTree = "<group>"; };
+		8E655CCA1E72807A00876105 /* OOFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOFileManager.h; sourceTree = "<group>"; };
+		8E655CCB1E72807A00876105 /* OOFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOFileManager.m; sourceTree = "<group>"; };
 		8E7198CC1DE6E6D70068E388 /* OOMyStudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMyStudyViewController.h; sourceTree = "<group>"; };
 		8E7198CD1DE6E6D70068E388 /* OOMyStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOMyStudyViewController.m; sourceTree = "<group>"; };
 		8F22BA48BF4383101235A4B4 /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
@@ -539,6 +550,10 @@
 				5503B28D1D82948D000343EA /* OOLocationManager.m */,
 				5503B29B1D8299E2000343EA /* OOKeyChainTool.h */,
 				5503B29C1D8299E2000343EA /* OOKeyChainTool.m */,
+				8E655CC81E72807A00876105 /* OOAliyunManager.h */,
+				8E655CC91E72807A00876105 /* OOAliyunManager.m */,
+				8E655CCA1E72807A00876105 /* OOFileManager.h */,
+				8E655CCB1E72807A00876105 /* OOFileManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -588,6 +603,16 @@
 				55894B2D1DC1EECA008DE544 /* ImagePickerViewController.m */,
 			);
 			path = "第三方Demo";
+			sourceTree = "<group>";
+		};
+		8E23F7B11E6E9EB10077A451 /* Runloop */ = {
+			isa = PBXGroup;
+			children = (
+				8E23F7B21E6E9EE10077A451 /* OORunloopController.h */,
+				8E23F7B31E6E9EE10077A451 /* OORunloopController.m */,
+				8E23F7B41E6E9EE10077A451 /* OORunloopController.xib */,
+			);
+			path = Runloop;
 			sourceTree = "<group>";
 		};
 		8E31E4671DEBE24B002A58C4 /* 自定义控件Demo */ = {
@@ -745,6 +770,7 @@
 				21CB3A091E55870C004E514D /* OperationQueues */,
 				8E558DEE1E0A813D00905CC2 /* NSURLSession */,
 				8E558DC41E02A09400905CC2 /* RunTime */,
+				8E23F7B11E6E9EB10077A451 /* Runloop */,
 				8E558DC01E0178C500905CC2 /* TextKit */,
 				8E558DBC1DFC0D2900905CC2 /* NSCache */,
 				8E31E4AB1DEFD480002A58C4 /* NSAttributedString */,
@@ -761,12 +787,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13F238061C3D3C5F00E5D8A3 /* Build configuration list for PBXNativeTarget "BaseFramework" */;
 			buildPhases = (
-				F18EDC4B4B81FE9BE1E8DC3B /* 📦 Check Pods Manifest.lock */,
+				F18EDC4B4B81FE9BE1E8DC3B /* [CP] Check Pods Manifest.lock */,
 				13F237D51C3D3C5F00E5D8A3 /* Sources */,
 				13F237D61C3D3C5F00E5D8A3 /* Frameworks */,
 				13F237D71C3D3C5F00E5D8A3 /* Resources */,
-				01FA250DEC36C249913C376E /* 📦 Embed Pods Frameworks */,
-				3B89A395606520414A61D92C /* 📦 Copy Pods Resources */,
+				01FA250DEC36C249913C376E /* [CP] Embed Pods Frameworks */,
+				3B89A395606520414A61D92C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -862,6 +888,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13F237EC1C3D3C5F00E5D8A3 /* LaunchScreen.storyboard in Resources */,
+				8E23F7B61E6E9EE10077A451 /* OORunloopController.xib in Resources */,
 				13F237E91C3D3C5F00E5D8A3 /* Assets.xcassets in Resources */,
 				21D778B41E63FCCD0023891E /* lAHOqJGKQc0C7s0C7g_750_750.gif in Resources */,
 				55894B961DC9EEBB008DE544 /* 开发规范.rtf in Resources */,
@@ -886,14 +913,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01FA250DEC36C249913C376E /* 📦 Embed Pods Frameworks */ = {
+		01FA250DEC36C249913C376E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -901,14 +928,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3B89A395606520414A61D92C /* 📦 Copy Pods Resources */ = {
+		3B89A395606520414A61D92C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -916,19 +943,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F18EDC4B4B81FE9BE1E8DC3B /* 📦 Check Pods Manifest.lock */ = {
+		F18EDC4B4B81FE9BE1E8DC3B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -947,6 +974,7 @@
 				5503B2731D828B15000343EA /* UILabel+Extend.m in Sources */,
 				2135A2881E5C1DA7005854E2 /* OOVideoController.m in Sources */,
 				8E558DF11E0A816000905CC2 /* OONSURLSessionController.m in Sources */,
+				8E655CCC1E72807A00876105 /* OOAliyunManager.m in Sources */,
 				8E31E4911DEBE29C002A58C4 /* OOPopThreeViewController.m in Sources */,
 				8E31E4951DEBE29C002A58C4 /* ScrollMianViewController.m in Sources */,
 				5503B28E1D82948D000343EA /* OOLocationManager.m in Sources */,
@@ -980,6 +1008,7 @@
 				8E31E4741DEBE24B002A58C4 /* BannerViewController.m in Sources */,
 				13F237DE1C3D3C5F00E5D8A3 /* main.m in Sources */,
 				5503B2BF1D829C37000343EA /* KxMenu.m in Sources */,
+				8E655CCD1E72807A00876105 /* OOFileManager.m in Sources */,
 				8E558DD11E02A12F00905CC2 /* Chicken.m in Sources */,
 				5503B2771D828B15000343EA /* NetWork.m in Sources */,
 				8E558DC31E0178D900905CC2 /* OOTextKitController.m in Sources */,
@@ -999,6 +1028,7 @@
 				8E31E4901DEBE29C002A58C4 /* OOPopOneViewController.m in Sources */,
 				2112BAEF1E5D6A360093A1A7 /* OOVideoPlayView.m in Sources */,
 				21CB3A291E5AA963004E514D /* FPSController.m in Sources */,
+				8E23F7B51E6E9EE10077A451 /* OORunloopController.m in Sources */,
 				8E558DBF1DFC0D9100905CC2 /* OONSCacheController.m in Sources */,
 				5503B2711D828B15000343EA /* NSString+Extend.m in Sources */,
 				8E31E45B1DEBD4A6002A58C4 /* UINavigationController+Pop.m in Sources */,

@@ -14,6 +14,7 @@
 #import "OOTextKitController.h"
 #import "OONSURLSessionController.h"
 #import "OOOperationQueuesController.h"
+#import "OORunloopController.h"
 
 @interface OOMyStudyViewController ()
 @property (nonatomic, strong) NSArray *dataSource;
@@ -32,19 +33,18 @@
                     NSStringFromClass([OONSCacheController class]),
                     NSStringFromClass([OOTextKitController class]),
                     NSStringFromClass([OONSURLSessionController class]),
-                    NSStringFromClass([OOOperationQueuesController class])
+                    NSStringFromClass([OOOperationQueuesController class]),
+                    NSStringFromClass([OORunloopController class])
                     ];
     
-    _arrayViewController = @[[[OOCoreGraphicsViewController alloc] init],
-                             [[OOCoreTextViewController alloc] init],
-                             [[OOAttributedStringViewController alloc] init],
-                              [[OONSCacheController alloc] init],
-                             [[OOTextKitController alloc] init],
-                             [[OONSURLSessionController alloc] init],
-                             [[OOOperationQueuesController alloc] init]
-                             ];
+  
     
     [self.view addSubview:self.tableView];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    self.arrayViewController = nil;
+    [super viewWillAppear:animated];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -70,5 +70,19 @@
     [self.navigationController pushViewController:self.arrayViewController[indexPath.row] animated:YES];
 }
 
-
+#pragma mark - Getter
+- (NSArray *)arrayViewController{
+    if (!_arrayViewController) {
+        _arrayViewController = @[[[OOCoreGraphicsViewController alloc] init],
+                                 [[OOCoreTextViewController alloc] init],
+                                 [[OOAttributedStringViewController alloc] init],
+                                 [[OONSCacheController alloc] init],
+                                 [[OOTextKitController alloc] init],
+                                 [[OONSURLSessionController alloc] init],
+                                 [[OOOperationQueuesController alloc] init],
+                                 [[OORunloopController alloc] init]
+                                 ];
+    }
+    return _arrayViewController;
+}
 @end
