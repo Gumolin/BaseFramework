@@ -15,6 +15,8 @@
 #import "OONSURLSessionController.h"
 #import "OOOperationQueuesController.h"
 #import "OORunloopController.h"
+#import "OOMotionController.h"
+#import "OOCoreAnimationViewController.h"
 
 @interface OOMyStudyViewController ()
 @property (nonatomic, strong) NSArray *dataSource;
@@ -34,7 +36,9 @@
                     NSStringFromClass([OOTextKitController class]),
                     NSStringFromClass([OONSURLSessionController class]),
                     NSStringFromClass([OOOperationQueuesController class]),
-                    NSStringFromClass([OORunloopController class])
+                    NSStringFromClass([OORunloopController class]),
+                    NSStringFromClass([OOMotionController class]),
+                    NSStringFromClass([OOCoreAnimationViewController class])
                     ];
     
   
@@ -80,7 +84,9 @@
                                  [[OOTextKitController alloc] init],
                                  [[OONSURLSessionController alloc] init],
                                  [[OOOperationQueuesController alloc] init],
-                                 [[OORunloopController alloc] init]
+                                 [[OORunloopController alloc] init],
+                                 [[OOMotionController alloc] init],
+                                 [[OOCoreAnimationViewController alloc] init]
                                  ];
     }
     return _arrayViewController;

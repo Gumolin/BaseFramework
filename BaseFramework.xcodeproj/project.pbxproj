@@ -80,6 +80,9 @@
 		8E31E4A71DED6348002A58C4 /* OOCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E31E4A61DED6348002A58C4 /* OOCoreTextViewController.m */; };
 		8E31E4AA1DED6478002A58C4 /* OOCoreTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E31E4A91DED6478002A58C4 /* OOCoreTextView.m */; };
 		8E31E4AE1DEFD4A1002A58C4 /* OOAttributedStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E31E4AD1DEFD4A1002A58C4 /* OOAttributedStringViewController.m */; };
+		8E5095C41E77CC8800AC94E6 /* OOMotionManagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5095C31E77CC8800AC94E6 /* OOMotionManagerController.m */; };
+		8E5095C81E79236D00AC94E6 /* OOCoreAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5095C71E79236D00AC94E6 /* OOCoreAnimationViewController.m */; };
+		8E5095CB1E7A6B2300AC94E6 /* OOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5095CA1E7A6B2300AC94E6 /* OOPerson.m */; };
 		8E558DBF1DFC0D9100905CC2 /* OONSCacheController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E558DBE1DFC0D9100905CC2 /* OONSCacheController.m */; };
 		8E558DC31E0178D900905CC2 /* OOTextKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E558DC21E0178D900905CC2 /* OOTextKitController.m */; };
 		8E558DC71E02A0B600905CC2 /* OORunTimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E558DC61E02A0B600905CC2 /* OORunTimeController.m */; };
@@ -88,9 +91,13 @@
 		8E558DD21E02A12F00905CC2 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E558DCD1E02A12F00905CC2 /* Dog.m */; };
 		8E558DD31E02A12F00905CC2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E558DCF1E02A12F00905CC2 /* Person.m */; };
 		8E558DF11E0A816000905CC2 /* OONSURLSessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E558DF01E0A816000905CC2 /* OONSURLSessionController.m */; };
+		8E6011D11E779A9E00D9464D /* OOMotionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6011D01E779A9E00D9464D /* OOMotionController.m */; };
+		8E6011D41E779B6A00D9464D /* OOShakeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6011D31E779B6A00D9464D /* OOShakeController.m */; };
+		8E6011D71E779C9B00D9464D /* OOStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6011D61E779C9B00D9464D /* OOStepViewController.m */; };
 		8E655CCC1E72807A00876105 /* OOAliyunManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E655CC91E72807A00876105 /* OOAliyunManager.m */; };
 		8E655CCD1E72807A00876105 /* OOFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E655CCB1E72807A00876105 /* OOFileManager.m */; };
 		8E7198CE1DE6E6D70068E388 /* OOMyStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7198CD1DE6E6D70068E388 /* OOMyStudyViewController.m */; };
+		8EF683221E7F9F870050FB66 /* OOGCDController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF683211E7F9F870050FB66 /* OOGCDController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,6 +263,12 @@
 		8E31E4A91DED6478002A58C4 /* OOCoreTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOCoreTextView.m; sourceTree = "<group>"; };
 		8E31E4AC1DEFD4A1002A58C4 /* OOAttributedStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOAttributedStringViewController.h; sourceTree = "<group>"; };
 		8E31E4AD1DEFD4A1002A58C4 /* OOAttributedStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOAttributedStringViewController.m; sourceTree = "<group>"; };
+		8E5095C21E77CC8800AC94E6 /* OOMotionManagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMotionManagerController.h; sourceTree = "<group>"; };
+		8E5095C31E77CC8800AC94E6 /* OOMotionManagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOMotionManagerController.m; sourceTree = "<group>"; };
+		8E5095C61E79236D00AC94E6 /* OOCoreAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOCoreAnimationViewController.h; sourceTree = "<group>"; };
+		8E5095C71E79236D00AC94E6 /* OOCoreAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOCoreAnimationViewController.m; sourceTree = "<group>"; };
+		8E5095C91E7A6B2300AC94E6 /* OOPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOPerson.h; sourceTree = "<group>"; };
+		8E5095CA1E7A6B2300AC94E6 /* OOPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOPerson.m; sourceTree = "<group>"; };
 		8E558DBD1DFC0D9100905CC2 /* OONSCacheController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OONSCacheController.h; sourceTree = "<group>"; };
 		8E558DBE1DFC0D9100905CC2 /* OONSCacheController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OONSCacheController.m; sourceTree = "<group>"; };
 		8E558DC11E0178D900905CC2 /* OOTextKitController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOTextKitController.h; sourceTree = "<group>"; };
@@ -272,12 +285,20 @@
 		8E558DCF1E02A12F00905CC2 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		8E558DEF1E0A816000905CC2 /* OONSURLSessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OONSURLSessionController.h; sourceTree = "<group>"; };
 		8E558DF01E0A816000905CC2 /* OONSURLSessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OONSURLSessionController.m; sourceTree = "<group>"; };
+		8E6011CF1E779A9E00D9464D /* OOMotionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMotionController.h; sourceTree = "<group>"; };
+		8E6011D01E779A9E00D9464D /* OOMotionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOMotionController.m; sourceTree = "<group>"; };
+		8E6011D21E779B6A00D9464D /* OOShakeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOShakeController.h; sourceTree = "<group>"; };
+		8E6011D31E779B6A00D9464D /* OOShakeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOShakeController.m; sourceTree = "<group>"; };
+		8E6011D51E779C9B00D9464D /* OOStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOStepViewController.h; sourceTree = "<group>"; };
+		8E6011D61E779C9B00D9464D /* OOStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOStepViewController.m; sourceTree = "<group>"; };
 		8E655CC81E72807A00876105 /* OOAliyunManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOAliyunManager.h; sourceTree = "<group>"; };
 		8E655CC91E72807A00876105 /* OOAliyunManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOAliyunManager.m; sourceTree = "<group>"; };
 		8E655CCA1E72807A00876105 /* OOFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOFileManager.h; sourceTree = "<group>"; };
 		8E655CCB1E72807A00876105 /* OOFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOFileManager.m; sourceTree = "<group>"; };
 		8E7198CC1DE6E6D70068E388 /* OOMyStudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMyStudyViewController.h; sourceTree = "<group>"; };
 		8E7198CD1DE6E6D70068E388 /* OOMyStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOMyStudyViewController.m; sourceTree = "<group>"; };
+		8EF683201E7F9F870050FB66 /* OOGCDController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOGCDController.h; sourceTree = "<group>"; };
+		8EF683211E7F9F870050FB66 /* OOGCDController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOGCDController.m; sourceTree = "<group>"; };
 		8F22BA48BF4383101235A4B4 /* Pods-BaseFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		D6795E52FE2284623FD7B39E /* libPods-BaseFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD4B0A4D3B8BC1DDAB9EFAB /* Pods-BaseFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseFramework/Pods-BaseFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -746,6 +767,17 @@
 			path = NSAttributedString;
 			sourceTree = "<group>";
 		};
+		8E5095C51E7922E300AC94E6 /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				8E5095C61E79236D00AC94E6 /* OOCoreAnimationViewController.h */,
+				8E5095C71E79236D00AC94E6 /* OOCoreAnimationViewController.m */,
+				8E5095C91E7A6B2300AC94E6 /* OOPerson.h */,
+				8E5095CA1E7A6B2300AC94E6 /* OOPerson.m */,
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
 		8E558DBC1DFC0D2900905CC2 /* NSCache */ = {
 			isa = PBXGroup;
 			children = (
@@ -790,9 +822,27 @@
 			path = NSURLSession;
 			sourceTree = "<group>";
 		};
+		8E6011CE1E7799D000D9464D /* 陀螺仪 */ = {
+			isa = PBXGroup;
+			children = (
+				8E6011CF1E779A9E00D9464D /* OOMotionController.h */,
+				8E6011D01E779A9E00D9464D /* OOMotionController.m */,
+				8E5095C21E77CC8800AC94E6 /* OOMotionManagerController.h */,
+				8E5095C31E77CC8800AC94E6 /* OOMotionManagerController.m */,
+				8E6011D21E779B6A00D9464D /* OOShakeController.h */,
+				8E6011D31E779B6A00D9464D /* OOShakeController.m */,
+				8E6011D51E779C9B00D9464D /* OOStepViewController.h */,
+				8E6011D61E779C9B00D9464D /* OOStepViewController.m */,
+			);
+			path = "陀螺仪";
+			sourceTree = "<group>";
+		};
 		8E7198C81DE6E6410068E388 /* 个人学习 */ = {
 			isa = PBXGroup;
 			children = (
+				8EF6831F1E7F9F590050FB66 /* GCD */,
+				8E5095C51E7922E300AC94E6 /* CoreAnimation */,
+				8E6011CE1E7799D000D9464D /* 陀螺仪 */,
 				21CB3A091E55870C004E514D /* OperationQueues */,
 				8E558DEE1E0A813D00905CC2 /* NSURLSession */,
 				8E558DC41E02A09400905CC2 /* RunTime */,
@@ -804,6 +854,15 @@
 				8E31E49A1DED4C22002A58C4 /* CoreText */,
 			);
 			path = "个人学习";
+			sourceTree = "<group>";
+		};
+		8EF6831F1E7F9F590050FB66 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				8EF683201E7F9F870050FB66 /* OOGCDController.h */,
+				8EF683211E7F9F870050FB66 /* OOGCDController.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -993,12 +1052,16 @@
 			files = (
 				8E02F2F21E72A75C00F892F9 /* OOFingerprintLockController.m in Sources */,
 				8E31E4AA1DED6478002A58C4 /* OOCoreTextView.m in Sources */,
+				8E6011D11E779A9E00D9464D /* OOMotionController.m in Sources */,
 				5503B2B91D829C0A000343EA /* OOQRImageView.m in Sources */,
 				5503B2761D828B15000343EA /* Const.m in Sources */,
 				8E31E4761DEBE24B002A58C4 /* LaunchViewController.m in Sources */,
 				8E558DD21E02A12F00905CC2 /* Dog.m in Sources */,
 				5503B2911D8295DD000343EA /* BaseViewController.m in Sources */,
 				5503B2731D828B15000343EA /* UILabel+Extend.m in Sources */,
+				8E5095C41E77CC8800AC94E6 /* OOMotionManagerController.m in Sources */,
+				8EF683221E7F9F870050FB66 /* OOGCDController.m in Sources */,
+				8E5095CB1E7A6B2300AC94E6 /* OOPerson.m in Sources */,
 				2135A2881E5C1DA7005854E2 /* OOVideoController.m in Sources */,
 				8E558DF11E0A816000905CC2 /* OONSURLSessionController.m in Sources */,
 				8E655CCC1E72807A00876105 /* OOAliyunManager.m in Sources */,
@@ -1038,6 +1101,7 @@
 				8E655CCD1E72807A00876105 /* OOFileManager.m in Sources */,
 				8E558DD11E02A12F00905CC2 /* Chicken.m in Sources */,
 				5503B2771D828B15000343EA /* NetWork.m in Sources */,
+				8E5095C81E79236D00AC94E6 /* OOCoreAnimationViewController.m in Sources */,
 				8E558DC31E0178D900905CC2 /* OOTextKitController.m in Sources */,
 				5503B2BB1D829C0A000343EA /* OOStretchTableHeaderView.m in Sources */,
 				8E31E4961DEBE29C002A58C4 /* ScrollSubOneViewController.m in Sources */,
@@ -1046,6 +1110,7 @@
 				21CB3A231E56FF1C004E514D /* OOTextFiledCustomController.m in Sources */,
 				2135A2841E5C1D16005854E2 /* OOProxy.m in Sources */,
 				5503B29D1D8299E2000343EA /* OOKeyChainTool.m in Sources */,
+				8E6011D41E779B6A00D9464D /* OOShakeController.m in Sources */,
 				21CB3A2C1E5AAAE3004E514D /* FPSLabel.m in Sources */,
 				8E31E4A71DED6348002A58C4 /* OOCoreTextViewController.m in Sources */,
 				8E31E4941DEBE29C002A58C4 /* TouchViewController.m in Sources */,
@@ -1059,6 +1124,7 @@
 				8E558DBF1DFC0D9100905CC2 /* OONSCacheController.m in Sources */,
 				5503B2711D828B15000343EA /* NSString+Extend.m in Sources */,
 				8E31E45B1DEBD4A6002A58C4 /* UINavigationController+Pop.m in Sources */,
+				8E6011D71E779C9B00D9464D /* OOStepViewController.m in Sources */,
 				21CB3A0C1E558740004E514D /* OOOperationQueuesController.m in Sources */,
 				8E31E4791DEBE24B002A58C4 /* StretchTableHeaderViewController.m in Sources */,
 				550A22CC1DB4C68A0025A2B5 /* KxMenuItemViewController.m in Sources */,

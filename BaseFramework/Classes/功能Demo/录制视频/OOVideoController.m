@@ -129,7 +129,8 @@ typedef NS_ENUM(NSInteger) {
 - (OOVideoPlayView *)videoPlayView{
     if (!_videoPlayView) {
         _videoPlayView = [[OOVideoPlayView alloc] init];
-        _videoPlayView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+//        _videoPlayView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        _videoPlayView.videoOrientation = OOVideoOrientationLandscape;
     }
     return _videoPlayView;
 }

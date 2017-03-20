@@ -10,14 +10,13 @@
 
 #import <LocalAuthentication/LocalAuthentication.h>
 @interface OOFingerprintLockController ()
-
 @end
 
 @implementation OOFingerprintLockController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    _str = @"123";
     LAContext *context = [[LAContext alloc] init];
     context.localizedFallbackTitle = @"竟然失败";
    
