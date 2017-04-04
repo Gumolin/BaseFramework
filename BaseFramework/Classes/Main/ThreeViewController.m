@@ -11,6 +11,7 @@
 #import "ProgressHUDViewController.h"
 #import "PhotoBrowserViewController.h"
 #import "ImagePickerViewController.h"
+#import "YYCacheController.h"
 @interface ThreeViewController ()
 @property (nonatomic, strong) NSArray *dataSource;
 @property (nonatomic, strong) NSArray *arrayViewController;
@@ -25,17 +26,17 @@
     _dataSource = @[NSStringFromClass([KxMenuItemViewController class]),
                     NSStringFromClass([ProgressHUDViewController class]),
                     NSStringFromClass([PhotoBrowserViewController class]),
-                    NSStringFromClass([ImagePickerViewController class])];
+                    NSStringFromClass([ImagePickerViewController class]),
+                    NSStringFromClass([YYCacheController class])];
     
-    _arrayViewController = @[[[KxMenuItemViewController alloc] init],
-                             [[ProgressHUDViewController alloc] init],
-                            [[PhotoBrowserViewController alloc] init],
-                             [[ImagePickerViewController alloc] init]];
     
     [self.view addSubview:self.tableView];
     
 }
-
+- (void)viewWillAppear:(BOOL)animated{
+    self.arrayViewController = nil;
+    [super viewWillAppear:animated];
+}
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataSource.count;
 }
@@ -59,4 +60,15 @@
     [self.navigationController pushViewController:self.arrayViewController[indexPath.row] animated:YES];
 }
 
+#pragma mark - Getter
+- (NSArray *)arrayViewController{
+    if (!_arrayViewController) {
+        _arrayViewController = @[[[KxMenuItemViewController alloc] init],
+                                 [[ProgressHUDViewController alloc] init],
+                                 [[PhotoBrowserViewController alloc] init],
+                                 [[ImagePickerViewController alloc] init],
+                                 [[YYCacheController alloc] init]];
+    }
+    return _arrayViewController;
+}
 @end

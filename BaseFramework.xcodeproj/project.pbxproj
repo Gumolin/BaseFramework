@@ -97,6 +97,12 @@
 		8E655CCD1E72807A00876105 /* OOFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E655CCB1E72807A00876105 /* OOFileManager.m */; };
 		8E7198CE1DE6E6D70068E388 /* OOMyStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7198CD1DE6E6D70068E388 /* OOMyStudyViewController.m */; };
 		8E8210D11E8250E70011290A /* OOOPerationCuston.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8210D01E8250E70011290A /* OOOPerationCuston.m */; };
+		8EB351191E9338E3009A8FFD /* YYCacheController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB351181E9338E3009A8FFD /* YYCacheController.m */; };
+		8EB3511C1E934621009A8FFD /* OOCachePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3511B1E934621009A8FFD /* OOCachePerson.m */; };
+		8EB351261E9370DA009A8FFD /* DGAFNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3511F1E9370DA009A8FFD /* DGAFNetWorking.m */; };
+		8EB351271E9370DA009A8FFD /* DGCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB351211E9370DA009A8FFD /* DGCacheConfig.m */; };
+		8EB351281E9370DA009A8FFD /* DGFileHandleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB351231E9370DA009A8FFD /* DGFileHandleFactory.m */; };
+		8EB351291E9370DA009A8FFD /* DGNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB351251E9370DA009A8FFD /* DGNetworkCache.m */; };
 		8EEF93881E8A31E700991894 /* OOKVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF93871E8A31E700991894 /* OOKVCViewController.m */; };
 		8EEF938F1E8A328300991894 /* OOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF938E1E8A328300991894 /* OOPerson.m */; };
 		8EF683221E7F9F870050FB66 /* OOGCDController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF683211E7F9F870050FB66 /* OOGCDController.m */; };
@@ -299,6 +305,18 @@
 		8E7198CD1DE6E6D70068E388 /* OOMyStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOMyStudyViewController.m; sourceTree = "<group>"; };
 		8E8210CF1E8250E70011290A /* OOOPerationCuston.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOOPerationCuston.h; sourceTree = "<group>"; };
 		8E8210D01E8250E70011290A /* OOOPerationCuston.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOOPerationCuston.m; sourceTree = "<group>"; };
+		8EB351171E9338E3009A8FFD /* YYCacheController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCacheController.h; sourceTree = "<group>"; };
+		8EB351181E9338E3009A8FFD /* YYCacheController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCacheController.m; sourceTree = "<group>"; };
+		8EB3511A1E934620009A8FFD /* OOCachePerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOCachePerson.h; sourceTree = "<group>"; };
+		8EB3511B1E934621009A8FFD /* OOCachePerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOCachePerson.m; sourceTree = "<group>"; };
+		8EB3511E1E9370DA009A8FFD /* DGAFNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGAFNetWorking.h; sourceTree = "<group>"; };
+		8EB3511F1E9370DA009A8FFD /* DGAFNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGAFNetWorking.m; sourceTree = "<group>"; };
+		8EB351201E9370DA009A8FFD /* DGCacheConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGCacheConfig.h; sourceTree = "<group>"; };
+		8EB351211E9370DA009A8FFD /* DGCacheConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGCacheConfig.m; sourceTree = "<group>"; };
+		8EB351221E9370DA009A8FFD /* DGFileHandleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGFileHandleFactory.h; sourceTree = "<group>"; };
+		8EB351231E9370DA009A8FFD /* DGFileHandleFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGFileHandleFactory.m; sourceTree = "<group>"; };
+		8EB351241E9370DA009A8FFD /* DGNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGNetworkCache.h; sourceTree = "<group>"; };
+		8EB351251E9370DA009A8FFD /* DGNetworkCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGNetworkCache.m; sourceTree = "<group>"; };
 		8EEF93861E8A31E700991894 /* OOKVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOKVCViewController.h; sourceTree = "<group>"; };
 		8EEF93871E8A31E700991894 /* OOKVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOKVCViewController.m; sourceTree = "<group>"; };
 		8EEF938D1E8A328300991894 /* OOPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOPerson.h; sourceTree = "<group>"; };
@@ -554,6 +572,7 @@
 		5503B26B1D828B15000343EA /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				8EB3511D1E9370DA009A8FFD /* DGAFNetWorking */,
 				5503B26C1D828B15000343EA /* NetWork.h */,
 				5503B26D1D828B15000343EA /* NetWork.m */,
 			);
@@ -629,6 +648,7 @@
 		550A22BB1DB0D11C0025A2B5 /* 第三方Demo */ = {
 			isa = PBXGroup;
 			children = (
+				8EB351161E9338B5009A8FFD /* YYCache */,
 				550A22CA1DB4C68A0025A2B5 /* KxMenuItemViewController.h */,
 				550A22CB1DB4C68A0025A2B5 /* KxMenuItemViewController.m */,
 				550A22D61DB5B8390025A2B5 /* ProgressHUDViewController.h */,
@@ -864,6 +884,32 @@
 			path = "个人学习";
 			sourceTree = "<group>";
 		};
+		8EB351161E9338B5009A8FFD /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				8EB351171E9338E3009A8FFD /* YYCacheController.h */,
+				8EB351181E9338E3009A8FFD /* YYCacheController.m */,
+				8EB3511A1E934620009A8FFD /* OOCachePerson.h */,
+				8EB3511B1E934621009A8FFD /* OOCachePerson.m */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
+		8EB3511D1E9370DA009A8FFD /* DGAFNetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3511E1E9370DA009A8FFD /* DGAFNetWorking.h */,
+				8EB3511F1E9370DA009A8FFD /* DGAFNetWorking.m */,
+				8EB351201E9370DA009A8FFD /* DGCacheConfig.h */,
+				8EB351211E9370DA009A8FFD /* DGCacheConfig.m */,
+				8EB351221E9370DA009A8FFD /* DGFileHandleFactory.h */,
+				8EB351231E9370DA009A8FFD /* DGFileHandleFactory.m */,
+				8EB351241E9370DA009A8FFD /* DGNetworkCache.h */,
+				8EB351251E9370DA009A8FFD /* DGNetworkCache.m */,
+			);
+			path = DGAFNetWorking;
+			sourceTree = "<group>";
+		};
 		8EEF93851E8A31C200991894 /* KVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1084,6 +1130,7 @@
 				8E31E4761DEBE24B002A58C4 /* LaunchViewController.m in Sources */,
 				8E558DD21E02A12F00905CC2 /* Dog.m in Sources */,
 				5503B2911D8295DD000343EA /* BaseViewController.m in Sources */,
+				8EB351191E9338E3009A8FFD /* YYCacheController.m in Sources */,
 				5503B2731D828B15000343EA /* UILabel+Extend.m in Sources */,
 				8E5095C41E77CC8800AC94E6 /* OOMotionManagerController.m in Sources */,
 				8EF683221E7F9F870050FB66 /* OOGCDController.m in Sources */,
@@ -1094,6 +1141,7 @@
 				8E31E4951DEBE29C002A58C4 /* ScrollMianViewController.m in Sources */,
 				5503B28E1D82948D000343EA /* OOLocationManager.m in Sources */,
 				8E558DC71E02A0B600905CC2 /* OORunTimeController.m in Sources */,
+				8EB351261E9370DA009A8FFD /* DGAFNetWorking.m in Sources */,
 				138E8BE41C4A74EB0095F92B /* OONavigationController.m in Sources */,
 				8E31E4971DEBE29C002A58C4 /* ScrollSubThreeViewController.m in Sources */,
 				5503B2721D828B15000343EA /* UIImage+Extend.m in Sources */,
@@ -1127,7 +1175,9 @@
 				8E558DD11E02A12F00905CC2 /* Chicken.m in Sources */,
 				5503B2771D828B15000343EA /* NetWork.m in Sources */,
 				8E5095C81E79236D00AC94E6 /* OOCoreAnimationViewController.m in Sources */,
+				8EB351271E9370DA009A8FFD /* DGCacheConfig.m in Sources */,
 				8E558DC31E0178D900905CC2 /* OOTextKitController.m in Sources */,
+				8EB351281E9370DA009A8FFD /* DGFileHandleFactory.m in Sources */,
 				5503B2BB1D829C0A000343EA /* OOStretchTableHeaderView.m in Sources */,
 				8E31E4961DEBE29C002A58C4 /* ScrollSubOneViewController.m in Sources */,
 				8EEF938F1E8A328300991894 /* OOPerson.m in Sources */,
@@ -1136,6 +1186,7 @@
 				21CB3A231E56FF1C004E514D /* OOTextFiledCustomController.m in Sources */,
 				2135A2841E5C1D16005854E2 /* OOProxy.m in Sources */,
 				5503B29D1D8299E2000343EA /* OOKeyChainTool.m in Sources */,
+				8EB3511C1E934621009A8FFD /* OOCachePerson.m in Sources */,
 				8E6011D41E779B6A00D9464D /* OOShakeController.m in Sources */,
 				21CB3A2C1E5AAAE3004E514D /* FPSLabel.m in Sources */,
 				8E31E4A71DED6348002A58C4 /* OOCoreTextViewController.m in Sources */,
@@ -1148,6 +1199,7 @@
 				8E31E4901DEBE29C002A58C4 /* OOPopOneViewController.m in Sources */,
 				2112BAEF1E5D6A360093A1A7 /* OOVideoPlayView.m in Sources */,
 				21CB3A291E5AA963004E514D /* FPSController.m in Sources */,
+				8EB351291E9370DA009A8FFD /* DGNetworkCache.m in Sources */,
 				8E23F7B51E6E9EE10077A451 /* OORunloopController.m in Sources */,
 				8E558DBF1DFC0D9100905CC2 /* OONSCacheController.m in Sources */,
 				5503B2711D828B15000343EA /* NSString+Extend.m in Sources */,
