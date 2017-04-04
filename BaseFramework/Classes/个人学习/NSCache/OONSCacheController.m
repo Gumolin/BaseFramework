@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+     NSLog(@"%@", [self.cache objectForKey:@"123"]);
 }
 
 
@@ -42,14 +44,17 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    for (int i =0 ; i< 100; i++) {
-        // 向缓存中添加对象
-        NSString *str = [NSString stringWithFormat:@"hello - %d", i];
-        [self.cache setObject:str forKey:@(i)];
-    }
-    for (int i=0 ; i< 100; i++) {
-        NSLog(@"%@", [self.cache objectForKey:@(i)]);
-    }
+//    for (int i =0 ; i< 100; i++) {
+//        // 向缓存中添加对象
+//        NSString *str = [NSString stringWithFormat:@"hello - %d", i];
+//        [self.cache setObject:str forKey:@(i)];
+//    }
+//    for (int i=0 ; i< 100; i++) {
+//        NSLog(@"%@", [self.cache objectForKey:@(i)]);
+//    }
+    
+    [self.cache setObject:@"beelin" forKey:@"123"];
+    NSLog(@"%@", [self.cache objectForKey:@"123"]);
 }
 
 

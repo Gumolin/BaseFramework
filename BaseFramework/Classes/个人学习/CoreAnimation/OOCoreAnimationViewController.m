@@ -26,9 +26,7 @@
     
    // _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeAction) userInfo:nil repeats:YES];
     
-    self.person.callBlock = ^(){
-        self.v.backgroundColor = [UIColor blueColor];
-    };
+    
 }
 - (void)dealloc{
     NSLog(@"dealloc");

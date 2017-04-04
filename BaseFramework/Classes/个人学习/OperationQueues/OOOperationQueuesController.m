@@ -56,6 +56,14 @@
     NSOperationQueue *q = [[NSOperationQueue alloc] init];
     [q addOperation:[self invocationOperation]];
     [q addOperation:[self blockOperation]];
+    
+    //取消队列的所有操作.也可以调用NSOperation的- (void)cancel⽅法取消单个操作
+    [q cancelAllOperations];
+    // YES代表暂停队列,NO代表恢复队列
+    [q setSuspended:YES];
+    //当前状态
+    [q isSuspended];
+    //暂停和恢复的适用场合：在tableview界面，开线程下载远程的网络界面，对UI会有影响，使用户体验变差。那么这种情况，就可以设置在用户操作UI（如滚动屏幕）的时候，暂停队列（不是取消队列），停止滚动的时候，恢复队列。
 }
 
 
@@ -63,4 +71,40 @@
     NSLog(@"Start executing %@ with, mainThread: %@, currentThread: %@", NSStringFromSelector(_cmd), [NSThread mainThread], [NSThread currentThread]);
     sleep(3);
 }
+
+/*
+ // 回到主线程进行显示
+ [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+ self.imageView.image = image;
+ }];
+ */
+
+/** 队列优先级
+ （1）设置NSOperation在queue中的优先级,可以改变操作的执⾏优先级
+ 
+ - (NSOperationQueuePriority)queuePriority;
+ - (void)setQueuePriority:(NSOperationQueuePriority)p;
+ 
+ （2）优先级的取值
+ 
+ NSOperationQueuePriorityVeryLow = -8L,
+ 
+ NSOperationQueuePriorityLow = -4L,
+ 
+ NSOperationQueuePriorityNormal = 0,
+ 
+ NSOperationQueuePriorityHigh = 4,
+ 
+ NSOperationQueuePriorityVeryHigh = 8
+ 
+ 说明：优先级高的任务，调用的几率会更大。
+ */
+
+/*
+ 操作的监听
+ 可以监听一个操作的执行完毕
+ 
+ - (void (^)(void))completionBlock;
+ - (void)setCompletionBlock:(void (^)(void))block;
+ */
 @end

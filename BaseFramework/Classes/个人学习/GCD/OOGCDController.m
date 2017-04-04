@@ -62,4 +62,51 @@
     //恢复队列
     dispatch_resume(myQueue);
 }
+
+/** 组队列 */
+- (void)groupQueue{
+    dispatch_group_t groupQueue = dispatch_group_create();
+    dispatch_group_async(groupQueue, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+       NSLog(@"并行任务1");
+    });
+    
+    dispatch_group_async(groupQueue, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+       NSLog(@"并行任务2");
+    });
+   
+    //dispatch_group_enter(groupQueue);
+//    dispatch_group_leave(groupQueue);
+    
+    dispatch_group_notify(groupQueue, dispatch_get_main_queue(), ^{
+        NSLog(@"groupQueue中的任务 都执行完成,回到主线程更新UI");
+    });
+    
+    
+}
+
+/** 栅栏
+ 先执行barrier之前任务，再执行barrier之后任务
+ */
+- (void)barrier{
+    //barrier 不能用全局队列
+    dispatch_queue_t queue = dispatch_queue_create(NULL, DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_async(queue, ^{
+        OOLog(@"并行任务1");
+    });
+    dispatch_async(queue, ^{
+        OOLog(@"并行任务2");
+    });
+
+    dispatch_barrier_async(queue, ^{
+        OOLog(@"---barrier---");
+    });
+    
+    dispatch_async(queue, ^{
+        OOLog(@"并行任务3");
+    });
+    dispatch_async(queue, ^{
+        OOLog(@"并行任务4");
+    });
+}
 @end
