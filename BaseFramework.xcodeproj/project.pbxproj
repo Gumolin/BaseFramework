@@ -95,7 +95,10 @@
 		8E6011D71E779C9B00D9464D /* OOStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6011D61E779C9B00D9464D /* OOStepViewController.m */; };
 		8E655CCC1E72807A00876105 /* OOAliyunManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E655CC91E72807A00876105 /* OOAliyunManager.m */; };
 		8E655CCD1E72807A00876105 /* OOFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E655CCB1E72807A00876105 /* OOFileManager.m */; };
+		8E6CCAB51E9667B600973A08 /* OOTableViewDataSourceSeparateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CCAB41E9667B600973A08 /* OOTableViewDataSourceSeparateController.m */; };
+		8E6CCAB81E9667E500973A08 /* OOTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6CCAB71E9667E500973A08 /* OOTableViewDataSource.m */; };
 		8E7198CE1DE6E6D70068E388 /* OOMyStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7198CD1DE6E6D70068E388 /* OOMyStudyViewController.m */; };
+		8E7B2F2D1E960EC100E28444 /* OOKVOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7B2F2C1E960EC100E28444 /* OOKVOPerson.m */; };
 		8E8210D11E8250E70011290A /* OOOPerationCuston.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8210D01E8250E70011290A /* OOOPerationCuston.m */; };
 		8EB351191E9338E3009A8FFD /* YYCacheController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB351181E9338E3009A8FFD /* YYCacheController.m */; };
 		8EB3511C1E934621009A8FFD /* OOCachePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3511B1E934621009A8FFD /* OOCachePerson.m */; };
@@ -301,8 +304,14 @@
 		8E655CC91E72807A00876105 /* OOAliyunManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOAliyunManager.m; sourceTree = "<group>"; };
 		8E655CCA1E72807A00876105 /* OOFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOFileManager.h; sourceTree = "<group>"; };
 		8E655CCB1E72807A00876105 /* OOFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOFileManager.m; sourceTree = "<group>"; };
+		8E6CCAB31E9667B600973A08 /* OOTableViewDataSourceSeparateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOTableViewDataSourceSeparateController.h; sourceTree = "<group>"; };
+		8E6CCAB41E9667B600973A08 /* OOTableViewDataSourceSeparateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOTableViewDataSourceSeparateController.m; sourceTree = "<group>"; };
+		8E6CCAB61E9667E500973A08 /* OOTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOTableViewDataSource.h; sourceTree = "<group>"; };
+		8E6CCAB71E9667E500973A08 /* OOTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOTableViewDataSource.m; sourceTree = "<group>"; };
 		8E7198CC1DE6E6D70068E388 /* OOMyStudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMyStudyViewController.h; sourceTree = "<group>"; };
 		8E7198CD1DE6E6D70068E388 /* OOMyStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOMyStudyViewController.m; sourceTree = "<group>"; };
+		8E7B2F2B1E960EC100E28444 /* OOKVOPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOKVOPerson.h; sourceTree = "<group>"; };
+		8E7B2F2C1E960EC100E28444 /* OOKVOPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOKVOPerson.m; sourceTree = "<group>"; };
 		8E8210CF1E8250E70011290A /* OOOPerationCuston.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOOPerationCuston.h; sourceTree = "<group>"; };
 		8E8210D01E8250E70011290A /* OOOPerationCuston.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOOPerationCuston.m; sourceTree = "<group>"; };
 		8EB351171E9338E3009A8FFD /* YYCacheController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCacheController.h; sourceTree = "<group>"; };
@@ -864,9 +873,21 @@
 			path = "陀螺仪";
 			sourceTree = "<group>";
 		};
+		8E6CCAB21E96672900973A08 /* TableView数据分离 */ = {
+			isa = PBXGroup;
+			children = (
+				8E6CCAB31E9667B600973A08 /* OOTableViewDataSourceSeparateController.h */,
+				8E6CCAB41E9667B600973A08 /* OOTableViewDataSourceSeparateController.m */,
+				8E6CCAB61E9667E500973A08 /* OOTableViewDataSource.h */,
+				8E6CCAB71E9667E500973A08 /* OOTableViewDataSource.m */,
+			);
+			path = "TableView数据分离";
+			sourceTree = "<group>";
+		};
 		8E7198C81DE6E6410068E388 /* 个人学习 */ = {
 			isa = PBXGroup;
 			children = (
+				8E6CCAB21E96672900973A08 /* TableView数据分离 */,
 				8EEF93851E8A31C200991894 /* KVC */,
 				8EF6831F1E7F9F590050FB66 /* GCD */,
 				8E5095C51E7922E300AC94E6 /* CoreAnimation */,
@@ -915,6 +936,8 @@
 			children = (
 				8EEF93861E8A31E700991894 /* OOKVCViewController.h */,
 				8EEF93871E8A31E700991894 /* OOKVCViewController.m */,
+				8E7B2F2B1E960EC100E28444 /* OOKVOPerson.h */,
+				8E7B2F2C1E960EC100E28444 /* OOKVOPerson.m */,
 			);
 			path = KVC;
 			sourceTree = "<group>";
@@ -1173,12 +1196,15 @@
 				5503B2BF1D829C37000343EA /* KxMenu.m in Sources */,
 				8E655CCD1E72807A00876105 /* OOFileManager.m in Sources */,
 				8E558DD11E02A12F00905CC2 /* Chicken.m in Sources */,
+				8E6CCAB51E9667B600973A08 /* OOTableViewDataSourceSeparateController.m in Sources */,
 				5503B2771D828B15000343EA /* NetWork.m in Sources */,
 				8E5095C81E79236D00AC94E6 /* OOCoreAnimationViewController.m in Sources */,
+				8E6CCAB81E9667E500973A08 /* OOTableViewDataSource.m in Sources */,
 				8EB351271E9370DA009A8FFD /* DGCacheConfig.m in Sources */,
 				8E558DC31E0178D900905CC2 /* OOTextKitController.m in Sources */,
 				8EB351281E9370DA009A8FFD /* DGFileHandleFactory.m in Sources */,
 				5503B2BB1D829C0A000343EA /* OOStretchTableHeaderView.m in Sources */,
+				8E7B2F2D1E960EC100E28444 /* OOKVOPerson.m in Sources */,
 				8E31E4961DEBE29C002A58C4 /* ScrollSubOneViewController.m in Sources */,
 				8EEF938F1E8A328300991894 /* OOPerson.m in Sources */,
 				8E31E4921DEBE29C002A58C4 /* OOPopTwoViewController.m in Sources */,

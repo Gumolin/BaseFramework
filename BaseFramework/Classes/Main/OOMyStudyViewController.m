@@ -18,6 +18,7 @@
 #import "OOMotionController.h"
 #import "OOCoreAnimationViewController.h"
 #import "OOKVCViewController.h"
+#import "OOTableViewDataSourceSeparateController.h"
 
 @interface OOMyStudyViewController ()
 @property (nonatomic, strong) NSArray *dataSource;
@@ -40,7 +41,8 @@
                     NSStringFromClass([OORunloopController class]),
                     NSStringFromClass([OOMotionController class]),
                     NSStringFromClass([OOCoreAnimationViewController class]),
-                    NSStringFromClass([OOKVCViewController class])
+                    NSStringFromClass([OOKVCViewController class]),
+                    NSStringFromClass([OOTableViewDataSourceSeparateController class])
                     ];
     
   
@@ -89,7 +91,8 @@
                                  [[OORunloopController alloc] init],
                                  [[OOMotionController alloc] init],
                                  [[OOCoreAnimationViewController alloc] init],
-                                 [[OOKVCViewController alloc] init]
+                                 [[OOKVCViewController alloc] init],
+                                 [[OOTableViewDataSourceSeparateController alloc] init]
                                  ];
     }
     return _arrayViewController;

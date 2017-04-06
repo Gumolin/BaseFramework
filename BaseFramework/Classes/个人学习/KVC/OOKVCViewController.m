@@ -8,10 +8,10 @@
 
 #import "OOKVCViewController.h"
 
-#import "OOPerson.h"
-
-@interface OOKVCViewController ()
-@property (nonatomic, strong) OOPerson *person;
+#import "OOKVOPerson.h"
+#import <objc/runtime.h>
+@interface OOKVCViewController () 
+@property (nonatomic, strong) OOKVOPerson *person;
 @end
 
 @implementation OOKVCViewController
@@ -19,31 +19,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.person = [[OOPerson alloc] init];
+    self.person = [[OOKVOPerson alloc] init];
    // [p setValue:@"beelin" forKey:@"name"];
-    
+
     //OOLog(@"未监听前 isa：%@",p->isa);
    // OOLog(@"未监听前 class: %@",p.class);
     
-    [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
-    
-   // [p willChangeValueForKey:@"name"];
+    [self.person addObserver:self forKeyPath:@"introl" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+       // [self.person addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
+   
+    self.person.name = @"beelin";
   
-   // [p didChangeValueForKey:@"name"];
+   // self.person.age = 10;
+    
 }
 
-
+- (void)dealloc {
+    [self.person removeObserver:self forKeyPath:@"introl"];
+}
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
     if ([keyPath isEqualToString:@"name"]) {
         
-        OOLog(@"%@ 对象的 %@ 属性改变了：%@", object, keyPath, change);
+    }else if ([keyPath isEqualToString:@"age"]) {
+        
     }
+     OOLog(@"%@ 对象的 %@ 属性改变了：%@", object, keyPath, change);
 }
 
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     self.person.name = @"abc";
 }
+
 
 @end
