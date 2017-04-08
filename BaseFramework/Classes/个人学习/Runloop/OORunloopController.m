@@ -13,7 +13,11 @@
     CFRunLoopRef runloopRef;
     CFRunLoopSourceRef source;
     __weak NSArray *weakArray;
+    
+    NSTimer *_timer;
 }
+
+@property (nonatomic, assign, getter=isFinish) BOOL finish;
 @end
 
 @implementation OORunloopController
@@ -25,7 +29,17 @@
     
 //    [self testDisPatch];
 //    [self willWorkWithOutSource];
-    [self inputSource];
+ //   [self inputSource];
+    
+    //场景模拟
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(thirdTest) object:nil];
+    //        [thread start];
+    //    });
+    
+    NSThread *thread = [[NSThread alloc] initWithTarget:self selector:@selector(firstTest) object:nil];
+    [thread start];
 }
 
 - (void)willWorkWithOutSource {
@@ -75,11 +89,11 @@
     OOLog(@"%@",[NSRunLoop currentRunLoop].currentMode);
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    NSLog(@"%p",&weakArray);
-    CFRunLoopSourceSignal(source);
-    CFRunLoopWakeUp(runloopRef);
-}
+//- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+//    NSLog(@"%p",&weakArray);
+//    CFRunLoopSourceSignal(source);
+//    CFRunLoopWakeUp(runloopRef);
+//}
 
 //配置基于端口的输入源
 - (void)inputSource {
@@ -118,5 +132,53 @@ void isCancel (){
 }
 void perfor () {
     NSLog(@"perform");
+}
+
+
+/** 场景一 不让线程自动退出 */
+- (void)firstTest{
+    NSRunLoop *loop = [NSRunLoop currentRunLoop];
+    [loop addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
+    while (!self.finish) {
+        @autoreleasepool {
+            [loop runUntilDate:[NSDate dateWithTimeIntervalSinceNow:3]];
+        }
+    }
+    OOLog(@"loop1 结束");
+}
+
+/** 场景二 线程与app生命周期相同 */
+- (void)secondTest {
+    @autoreleasepool {
+        NSRunLoop *loop = [NSRunLoop currentRunLoop];
+        [loop addPort:[NSMachPort port] forMode:NSDefaultRunLoopMode];
+        [loop run];
+        OOLog(@"loop2 结束");
+    }
+}
+
+/** 场景三 在一定时间里定时触发事件 */
+- (void)thirdTest {
+    @autoreleasepool {
+        _timer = [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(lauchAction) userInfo:nil repeats:YES];
+        NSRunLoop *loop = [NSRunLoop currentRunLoop];
+        [loop addTimer:_timer forMode:NSRunLoopCommonModes];
+        [loop runUntilDate:[NSDate dateWithTimeIntervalSinceNow:30]];
+        [_timer invalidate];
+        OOLog(@"loop3 结束");
+    }
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    self.finish = YES;
+}
+
+- (void)lauchAction {
+    static int i = 0;
+    i ++;
+    OOLog(@"定时第%d次3秒走一波", i);
+}
+
+- (void)dealloc {
+    [_timer invalidate];
 }
 @end
